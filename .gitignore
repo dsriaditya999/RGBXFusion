@@ -1,0 +1,21 @@
+wandb/
+flir_night_agn/
+flir_night_ada/
+flir_day_agn/
+flir_day_ada/
+.ipynb_checkpoints/*
+output/*
+Pretrained Model Files/*
+data/__pycache__/*
+models/__pycache__/*
+fixed_fusion_rgb.sh
+fixed_fusion_rgb.txt
+fixed_fusion_thermal_unfreeze.sh
+fixed_fusion_thermal_unfreeze.txt
+single_bb_rgb.sh
+single_bb_rgb.txt
+single_bb_thermal.sh
+single_bb_thermal.txt
+data/parsers/__pycache__/*
+utils/evaluation/__pycache__/*
+utils/__pycache__/*
