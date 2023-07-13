@@ -22,6 +22,8 @@ pip install -r requirements.txt
 
 ### Datasets
 
+#### FLIR Aligned
+
 Download the FLIR Aligned Dataset and put it in this structure:
 
 ```
@@ -30,6 +32,29 @@ Download the FLIR Aligned Dataset and put it in this structure:
 │   ├── images_rgb_test
 │   ├── images_thermal_train
 │   ├── images_thermal_test
+│   ├── meta
+```
+
+
+#### M3FD Dataset
+
+Download the FLIR Aligned Dataset and put it in this structure:
+
+```
+├── M3FD
+│   ├── Ir
+│   ├── Vis
+│   ├── meta
+```
+
+#### STF Dataset
+
+Download the FLIR Aligned Dataset and put it in this structure:
+
+```
+├── STF
+│   ├── gated_full_acc_rect_aligned
+│   ├── cam_stereo_left_rect_aligned
 │   ├── meta
 ```
 

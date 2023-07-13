@@ -14,7 +14,7 @@ from timm.models.layers import set_layer_config
 from models.models import Att_FusionNet, Adaptive_Att_FusionNet
 from models.detector import DetBenchPredictImagePair
 from data import create_dataset, create_loader, resolve_input_config
-from utils.evaluator import CocoEvaluator
+from utils.evaluator import create_evaluator
 from utils.utils import load_checkpoint_selective
 from utils.utils import visualize_detections
 
@@ -194,10 +194,10 @@ def validate(args):
         num_workers=args.workers,
         pin_mem=args.pin_mem)
 
-    if args.classwise:
-        evaluator = create_evaluator(args.dataset, dataset, pred_yxyx=False)
-    else:
-        evaluator = CocoEvaluator(dataset, distributed=False, pred_yxyx=False)
+    
+    evaluator = create_evaluator(args.dataset, dataset, distributed=False, pred_yxyx=False)
+
+
     bench.eval()
     batch_time = AverageMeter()
     end = time.time()

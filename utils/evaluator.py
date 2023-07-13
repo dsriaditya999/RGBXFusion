@@ -297,14 +297,14 @@ def create_evaluator(name, dataset, distributed=False, pred_yxyx=False):
     # FIXME support OpenImages Challenge2019 metric w/ image level label consideration
     if 'coco' in name:
         return CocoEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
-    # elif 'seeingthroughfog' in name: # stf uses kitti, which is based on pascal voc
-    #     return CocoEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
     elif 'm3fd' in name:
         return CocoEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
     elif 'flir' in name:
         return CocoEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
-    # elif 'seeingthroughfog' in name: # comment back in during eval mode, something doesn't play nice with anchor labeler during training
-    #     return KittiEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
+    elif 'stf' in name and 'eval' in name:
+        return KittiEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
+    elif 'stf' in name and 'eval' not in name:
+        return PascalEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
     elif 'openimages' in name:
         return OpenImagesEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
     else:

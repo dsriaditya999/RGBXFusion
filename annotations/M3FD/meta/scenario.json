@@ -1,0 +1,614 @@
+[
+    {
+        "name": "night",
+        "scene": [
+            {
+                "name": "alley",
+                "range": [
+                    {
+                        "min": 324,
+                        "max": 341
+                    },
+                    {
+                        "min": 4008,
+                        "max": 4027
+                    },
+                    {
+                        "min": 4100,
+                        "max": 4102
+                    }
+                ]
+            },
+            {
+                "name": "basement",
+                "range": [
+                    {
+                        "min": 2756,
+                        "max": 2778
+                    },
+                    {
+                        "min": 3952,
+                        "max": 3962
+                    }
+                ]
+            },
+            {
+                "name": "crowd",
+                "range": [
+                    {
+                        "min": 3855,
+                        "max": 3951
+                    },
+                    {
+                        "min": 3963,
+                        "max": 3989
+                    }
+                ]
+            },
+            {
+                "name": "driveway",
+                "range": [
+                    {
+                        "min": 386,
+                        "max": 536
+                    },
+                    {
+                        "min": 1227,
+                        "max": 1300
+                    }
+                ]
+            },
+            {
+                "name": "night_fair",
+                "range": [
+                    {
+                        "min": 537,
+                        "max": 642
+                    }
+                ]
+            },
+            {
+                "name": "parkinglot_campus",
+                "range": [
+                    {
+                        "min": 1444,
+                        "max": 1493
+                    },
+                    {
+                        "min": 3990,
+                        "max": 4007
+                    },
+                    {
+                        "min": 4028,
+                        "max": 4099
+                    }
+                ]
+            },
+            {
+                "name": "parkinglot_road_scene",
+                "range": [
+                    {
+                        "min": 643,
+                        "max": 708
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "daytime",
+        "scene": [
+            {
+                "name": "alley",
+                "range": [
+                    {
+                        "min": 2779,
+                        "max": 2889
+                    }
+                ]
+            },
+            {
+                "name": "building",
+                "range": [
+                    {
+                        "min": 1995,
+                        "max": 2043
+                    },
+                    {
+                        "min": 2095,
+                        "max": 2119
+                    },
+                    {
+                        "min": 2451,
+                        "max": 2456
+                    },
+                    {
+                        "min": 2474,
+                        "max": 2509
+                    },
+                    {
+                        "min": 2556,
+                        "max": 2623
+                    },
+                    {
+                        "min": 2716,
+                        "max": 2727
+                    },
+                    {
+                        "min": 2919,
+                        "max": 2938
+                    },
+                    {
+                        "min": 2970,
+                        "max": 3048
+                    },
+                    {
+                        "min": 3081,
+                        "max": 3100
+                    },
+                    {
+                        "min": 3188,
+                        "max": 3245
+                    },
+                    {
+                        "min": 3264,
+                        "max": 3277
+                    },
+                    {
+                        "min": 3313,
+                        "max": 3313
+                    },
+                    {
+                        "min": 3669,
+                        "max": 3720
+                    }
+                ]
+            },
+            {
+                "name": "crossroads",
+                "range": [
+                    {
+                        "min": 2186,
+                        "max": 2200
+                    },
+                    {
+                        "min": 2457,
+                        "max": 2473
+                    },
+                    {
+                        "min": 3246,
+                        "max": 3263
+                    },
+                    {
+                        "min": 3278,
+                        "max": 3312
+                    }
+                ]
+            },
+            {
+                "name": "gate",
+                "range": [
+                    {
+                        "min": 2728,
+                        "max": 2755
+                    },
+                    {
+                        "min": 2890,
+                        "max": 2918
+                    }
+                ]
+            },
+            {
+                "name": "grassland",
+                "range": [
+                    {
+                        "min": 719,
+                        "max": 742
+                    }
+                ]
+            },
+            {
+                "name": "mountain",
+                "range": [
+                    {
+                        "min": 2666,
+                        "max": 2708
+                    },
+                    {
+                        "min": 3049,
+                        "max": 3080
+                    },
+                    {
+                        "min": 3101,
+                        "max": 3187
+                    }
+                ]
+            },
+            {
+                "name": "overhead_bridge",
+                "range": [
+                    {
+                        "min": 2120,
+                        "max": 2161
+                    },
+                    {
+                        "min": 3527,
+                        "max": 3574
+                    }
+                ]
+            },
+            {
+                "name": "shops",
+                "range": [
+                    {
+                        "min": 3420,
+                        "max": 3536
+                    },
+                    {
+                        "min": 3589,
+                        "max": 3611
+                    }
+                ]
+            },
+            {
+                "name": "shrub",
+                "range": [
+                    {
+                        "min": 2162,
+                        "max": 2185
+                    },
+                    {
+                        "min": 2243,
+                        "max": 2450
+                    },
+                    {
+                        "min": 2624,
+                        "max": 2624
+                    },
+                    {
+                        "min": 2709,
+                        "max": 2715
+                    },
+                    {
+                        "min": 3314,
+                        "max": 3375
+                    },
+                    {
+                        "min": 3403,
+                        "max": 3419
+                    },
+                    {
+                        "min": 3661,
+                        "max": 3668
+                    }
+                ]
+            },
+            {
+                "name": "tunnel",
+                "range": [
+                    {
+                        "min": 2510,
+                        "max": 2555
+                    },
+                    {
+                        "min": 2625,
+                        "max": 2665
+                    },
+                    {
+                        "min": 2687,
+                        "max": 2694
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "challenge",
+        "scene": [
+            {
+                "name": "beach",
+                "range": [
+                    {
+                        "min": 1863,
+                        "max": 1911
+                    }
+                ]
+            },
+            {
+                "name": "crossroads",
+                "range": [
+                    {
+                        "min": 2044,
+                        "max": 2094
+                    },
+                    {
+                        "min": 2201,
+                        "max": 2242
+                    },
+                    {
+                        "min": 2939,
+                        "max": 2969
+                    },
+                    {
+                        "min": 3379,
+                        "max": 3402
+                    }
+                ]
+            },
+            {
+                "name": "densefog",
+                "range": [
+                    {
+                        "min": 342,
+                        "max": 385
+                    },
+                    {
+                        "min": 709,
+                        "max": 718
+                    },
+                    {
+                        "min": 896,
+                        "max": 969
+                    }
+                ]
+            },
+            {
+                "name": "field",
+                "range": [
+                    {
+                        "min": 1530,
+                        "max": 1579
+                    }
+                ]
+            },
+            {
+                "name": "grove",
+                "range": [
+                    {
+                        "min": 743,
+                        "max": 776
+                    }
+                ]
+            },
+            {
+                "name": "haze",
+                "range": [
+                    {
+                        "min": 777,
+                        "max": 800
+                    },
+                    {
+                        "min": 801,
+                        "max": 824
+                    },
+                    {
+                        "min": 865,
+                        "max": 895
+                    },
+                    {
+                        "min": 1429,
+                        "max": 1443
+                    }
+                ]
+            },
+            {
+                "name": "heavy_rain",
+                "range": [
+                    {
+                        "min": 244,
+                        "max": 323
+                    }
+                ]
+            },
+            {
+                "name": "high_street",
+                "range": [
+                    {
+                        "min": 3575,
+                        "max": 3588
+                    },
+                    {
+                        "min": 3612,
+                        "max": 3660
+                    }
+                ]
+            },
+            {
+                "name": "lake",
+                "range": [
+                    {
+                        "min": 1335,
+                        "max": 1391
+                    },
+                    {
+                        "min": 1935,
+                        "max": 1993
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "overcast",
+        "scene": [
+            {
+                "name": "alley",
+                "range": [
+                    {
+                        "min": 825,
+                        "max": 864
+                    },
+                    {
+                        "min": 1111,
+                        "max": 1155
+                    },
+                    {
+                        "min": 1156,
+                        "max": 1185
+                    },
+                    {
+                        "min": 3721,
+                        "max": 3740
+                    },
+                    {
+                        "min": 4103,
+                        "max": 4111
+                    },
+                    {
+                        "min": 4181,
+                        "max": 4199
+                    }
+                ]
+            },
+            {
+                "name": "atrium",
+                "range": [
+                    {
+                        "min": 1760,
+                        "max": 1796
+                    }
+                ]
+            },
+            {
+                "name": "beach",
+                "range": [
+                    {
+                        "min": 1797,
+                        "max": 1828
+                    },
+                    {
+                        "min": 1829,
+                        "max": 1844
+                    },
+                    {
+                        "min": 1845,
+                        "max": 1862
+                    },
+                    {
+                        "min": 1912,
+                        "max": 1934
+                    }
+                ]
+            },
+            {
+                "name": "driveway",
+                "range": [
+                    {
+                        "min": 148,
+                        "max": 192
+                    },
+                    {
+                        "min": 193,
+                        "max": 243
+                    },
+                    {
+                        "min": 1580,
+                        "max": 1709
+                    }
+                ]
+            },
+            {
+                "name": "footbridge",
+                "range": [
+                    {
+                        "min": 80,
+                        "max": 110
+                    }
+                ]
+            },
+            {
+                "name": "parkinglot",
+                "range": [
+                    {
+                        "min": 3741,
+                        "max": 3776
+                    },
+                    {
+                        "min": 3777,
+                        "max": 3823
+                    },
+                    {
+                        "min": 3824,
+                        "max": 3854
+                    },
+                    {
+                        "min": 4112,
+                        "max": 4128
+                    },
+                    {
+                        "min": 4129,
+                        "max": 4154
+                    },
+                    {
+                        "min": 4155,
+                        "max": 4180
+                    }
+                ]
+            },
+            {
+                "name": "pavilion",
+                "range": [
+                    {
+                        "min": 1710,
+                        "max": 1759
+                    }
+                ]
+            },
+            {
+                "name": "resident_area",
+                "range": [
+                    {
+                        "min": 3575,
+                        "max": 3588
+                    },
+                    {
+                        "min": 3612,
+                        "max": 3660
+                    }
+                ]
+            },
+            {
+                "name": "lake",
+                "range": [
+                    {
+                        "min": 0,
+                        "max": 59
+                    },
+                    {
+                        "min": 111,
+                        "max": 147
+                    },
+                    {
+                        "min": 1186,
+                        "max": 1226
+                    }
+                ]
+            },
+            {
+                "name": "square",
+                "range": [
+                    {
+                        "min": 60,
+                        "max": 79
+                    },
+                    {
+                        "min": 970,
+                        "max": 1012
+                    },
+                    {
+                        "min": 1013,
+                        "max": 1032
+                    },
+                    {
+                        "min": 1033,
+                        "max": 1069
+                    },
+                    {
+                        "min": 1070,
+                        "max": 1110
+                    }
+                ]
+            }
+        ]
+    }
+]

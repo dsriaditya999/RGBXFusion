@@ -9,7 +9,7 @@ from timm.utils import AverageMeter, CheckpointSaver, get_outdir
 from data import create_dataset, create_loader, resolve_input_config
 from models.detector import DetBenchTrainImagePair
 from models.models import Att_FusionNet
-from utils.evaluator import CocoEvaluator
+from utils.evaluator import create_evaluator
 from utils.utils import visualize_detections, visualize_target
 
 import matplotlib.pyplot as plt
@@ -160,7 +160,7 @@ if __name__ == '__main__':
         num_workers=args.workers,
         pin_mem=args.pin_mem)
 
-    evaluator = CocoEvaluator(val_dataset, distributed=False, pred_yxyx=False)
+    evaluator = create_evaluator(args.dataset, val_dataset, distributed=False, pred_yxyx=False)
 
     # load checkpoint
     if args.checkpoint:

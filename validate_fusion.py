@@ -191,10 +191,8 @@ def validate(args):
         num_workers=args.workers,
         pin_mem=args.pin_mem)
 
-    if args.classwise:
-        evaluator = create_evaluator(args.dataset, dataset, pred_yxyx=False)
-    else:
-        evaluator = CocoEvaluator(dataset, distributed=False, pred_yxyx=False)
+    evaluator = create_evaluator(args.dataset+"_eval", dataset, distributed=False, pred_yxyx=False)
+
     bench.eval()
     batch_time = AverageMeter()
     end = time.time()

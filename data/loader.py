@@ -29,9 +29,9 @@ class DetectionFastCollate:
             max_instances=MAX_NUM_INSTANCES,
             anchor_labeler=None,
     ):
-        instance_keys = instance_keys or {'bbox', 'bbox_ignore', 'cls'}
+        instance_keys = instance_keys or {'bbox', 'bbox_ignore', 'cls', 'difficult', 'truncated', 'occluded'}
         instance_shapes = instance_shapes or dict(
-            bbox=(max_instances, 4), bbox_ignore=(max_instances, 4), cls=(max_instances,))
+            bbox=(max_instances, 4), bbox_ignore=(max_instances, 4), cls=(max_instances,), difficult=(max_instances,), truncated=(max_instances,), occluded=(max_instances,))
         self.instance_info = {k: dict(fill=instance_fill, shape=instance_shapes[k]) for k in instance_keys}
         self.max_instances = max_instances
         self.anchor_labeler = anchor_labeler
