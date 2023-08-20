@@ -1,7 +1,5 @@
-python time_benchmark.py /home/carson/data/FLIR/FLIR_Aligned \
---dataset flir_aligned_full \
+python time_benchmark.py \
 --num-scenes 3 \
---split test \
 --num-classes 90 \
 --model efficientdetv2_dt \
 --branch fusion \

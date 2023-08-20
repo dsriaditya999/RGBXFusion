@@ -49,12 +49,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='PyTorch ImageNet Validation')
     parser.add_argument('--branch', default='fusion', type=str, metavar='BRANCH',
                         help='the inference branch ("thermal", "rgb", "fusion", or "single")')
-    parser.add_argument('root', metavar='DIR',
-                        help='path to dataset root')
-    parser.add_argument('--dataset', default='flir_aligned', type=str, metavar='DATASET',
-                        help='Name of dataset (default: "coco"')
-    parser.add_argument('--split', default='test',
-                        help='test split')
     parser.add_argument('--model', '-m', metavar='MODEL', default='tf_efficientdet_d1',
                         help='model architecture (default: tf_efficientdet_d1)')
     parser.add_argument('--num-classes', type=int, default=None, metavar='N',
@@ -68,5 +62,6 @@ if __name__ == '__main__':
     parser.add_argument('--thermal-checkpoint-path', type=str, default=None)
     parser.add_argument('--rgb-checkpoint-path', type=str, default=None)
     args = parser.parse_args()
+    args.dataset = 'fake_benchmark_data'
     run(args)
 
