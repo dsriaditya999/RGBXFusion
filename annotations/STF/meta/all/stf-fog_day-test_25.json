@@ -1,0 +1,5194 @@
+{
+  "annotations": [
+    {
+      "area": 36210,
+      "bbox": [
+        268,
+        325,
+        213,
+        170
+      ],
+      "category_id": 3,
+      "id": 4,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-53-13_01800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 30970,
+      "bbox": [
+        410,
+        265,
+        190,
+        163
+      ],
+      "category_id": 3,
+      "id": 12,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_06500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 50974,
+      "bbox": [
+        297,
+        236,
+        154,
+        331
+      ],
+      "category_id": 4,
+      "id": 13,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_06500",
+      "iscrowd": 0,
+      "name": "RidableVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        0,
+        270,
+        0,
+        64
+      ],
+      "category_id": 0,
+      "id": 14,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-50-46_06500",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 11224,
+      "bbox": [
+        69,
+        253,
+        122,
+        92
+      ],
+      "category_id": 0,
+      "id": 15,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-50-46_06500",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 9563,
+      "bbox": [
+        182,
+        207,
+        73,
+        131
+      ],
+      "category_id": 0,
+      "id": 16,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-50-46_06500",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        0,
+        291,
+        0,
+        35
+      ],
+      "category_id": 0,
+      "id": 17,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-50-46_06500",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2100,
+      "bbox": [
+        189,
+        269,
+        28,
+        75
+      ],
+      "category_id": 0,
+      "id": 18,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-50-46_06500",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 28830,
+      "bbox": [
+        544,
+        284,
+        186,
+        155
+      ],
+      "category_id": 3,
+      "id": 19,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-46-53_03300",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 45144,
+      "bbox": [
+        290,
+        190,
+        216,
+        209
+      ],
+      "category_id": 1,
+      "id": 20,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-46-53_03300",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 6674,
+      "bbox": [
+        311,
+        291,
+        94,
+        71
+      ],
+      "category_id": 3,
+      "id": 21,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-35-02_00800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 5589,
+      "bbox": [
+        351,
+        279,
+        81,
+        69
+      ],
+      "category_id": 3,
+      "id": 22,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-35-02_00800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 5865,
+      "bbox": [
+        428,
+        279,
+        115,
+        51
+      ],
+      "category_id": 3,
+      "id": 23,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-35-02_00800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 5088,
+      "bbox": [
+        597,
+        279,
+        106,
+        48
+      ],
+      "category_id": 3,
+      "id": 24,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-35-02_00800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 528,
+      "bbox": [
+        323,
+        281,
+        16,
+        33
+      ],
+      "category_id": 2,
+      "id": 25,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-35-02_00800",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        0,
+        259,
+        0,
+        340
+      ],
+      "category_id": 3,
+      "id": 46,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03370",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.65
+    },
+    {
+      "area": 19840,
+      "bbox": [
+        90,
+        315,
+        160,
+        124
+      ],
+      "category_id": 3,
+      "id": 47,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03370",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 9646,
+      "bbox": [
+        527,
+        304,
+        106,
+        91
+      ],
+      "category_id": 3,
+      "id": 48,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03370",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 4500,
+      "bbox": [
+        360,
+        330,
+        100,
+        45
+      ],
+      "category_id": 3,
+      "id": 49,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03370",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 14520,
+      "bbox": [
+        246,
+        272,
+        121,
+        120
+      ],
+      "category_id": 1,
+      "id": 50,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03370",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 87210,
+      "bbox": [
+        570,
+        283,
+        323,
+        270
+      ],
+      "category_id": 3,
+      "id": 51,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_07340",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        253,
+        0,
+        78
+      ],
+      "category_id": 0,
+      "id": 52,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-50-46_07340",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 17446,
+      "bbox": [
+        943,
+        260,
+        122,
+        143
+      ],
+      "category_id": 0,
+      "id": 53,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-50-46_07340",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 28728,
+      "bbox": [
+        589,
+        216,
+        152,
+        189
+      ],
+      "category_id": 1,
+      "id": 54,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_07340",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 4292,
+      "bbox": [
+        1086,
+        264,
+        37,
+        116
+      ],
+      "category_id": 2,
+      "id": 55,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_07340",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1079,
+      "bbox": [
+        0,
+        318,
+        13,
+        83
+      ],
+      "category_id": 2,
+      "id": 56,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_07340",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3360,
+      "bbox": [
+        412,
+        288,
+        35,
+        96
+      ],
+      "category_id": 2,
+      "id": 57,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_07340",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2349,
+      "bbox": [
+        482,
+        302,
+        27,
+        87
+      ],
+      "category_id": 2,
+      "id": 58,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_07340",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 25916,
+      "bbox": [
+        0,
+        287,
+        76,
+        341
+      ],
+      "category_id": 3,
+      "id": 67,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.5
+    },
+    {
+      "area": 30545,
+      "bbox": [
+        229,
+        295,
+        205,
+        149
+      ],
+      "category_id": 3,
+      "id": 68,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 9296,
+      "bbox": [
+        452,
+        320,
+        112,
+        83
+      ],
+      "category_id": 3,
+      "id": 69,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 16819,
+      "bbox": [
+        659,
+        287,
+        139,
+        121
+      ],
+      "category_id": 3,
+      "id": 70,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3100,
+      "bbox": [
+        566,
+        323,
+        62,
+        50
+      ],
+      "category_id": 3,
+      "id": 71,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3904,
+      "bbox": [
+        615,
+        299,
+        61,
+        64
+      ],
+      "category_id": 0,
+      "id": 72,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03200",
+      "iscrowd": 0,
+      "name": "Vehicle",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 12028,
+      "bbox": [
+        818,
+        305,
+        124,
+        97
+      ],
+      "category_id": 3,
+      "id": 84,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3102,
+      "bbox": [
+        639,
+        319,
+        66,
+        47
+      ],
+      "category_id": 3,
+      "id": 85,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 46172,
+      "bbox": [
+        0,
+        299,
+        476,
+        97
+      ],
+      "category_id": 0,
+      "id": 86,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-27-03_03800",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        329,
+        0,
+        145
+      ],
+      "category_id": 3,
+      "id": 87,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-35-02_00700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.39
+    },
+    {
+      "area": 35938,
+      "bbox": [
+        896,
+        305,
+        302,
+        119
+      ],
+      "category_id": 3,
+      "id": 88,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-35-02_00700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 10368,
+      "bbox": [
+        1199,
+        291,
+        81,
+        128
+      ],
+      "category_id": 3,
+      "id": 89,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-35-02_00700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2726,
+      "bbox": [
+        436,
+        315,
+        58,
+        47
+      ],
+      "category_id": 3,
+      "id": 90,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-35-02_00700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 8588,
+      "bbox": [
+        1204,
+        289,
+        76,
+        113
+      ],
+      "category_id": 3,
+      "id": 91,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-35-02_00700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 6030,
+      "bbox": [
+        390,
+        310,
+        90,
+        67
+      ],
+      "category_id": 3,
+      "id": 137,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-50-14_01250",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 34933,
+      "bbox": [
+        992,
+        285,
+        193,
+        181
+      ],
+      "category_id": 3,
+      "id": 141,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-30-29_00550",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3160,
+      "bbox": [
+        1240,
+        314,
+        40,
+        79
+      ],
+      "category_id": 3,
+      "id": 142,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-30-29_00550",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 6290,
+      "bbox": [
+        1106,
+        332,
+        85,
+        74
+      ],
+      "category_id": 3,
+      "id": 143,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-30-29_00550",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        0,
+        321,
+        0,
+        80
+      ],
+      "category_id": 0,
+      "id": 144,
+      "ignore": 1,
+      "image_id": "2018-10-29_14-30-29_00550",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1836,
+      "bbox": [
+        363,
+        346,
+        27,
+        68
+      ],
+      "category_id": 0,
+      "id": 145,
+      "ignore": 1,
+      "image_id": "2018-10-29_14-30-29_00550",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        273,
+        0,
+        126
+      ],
+      "category_id": 1,
+      "id": 146,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-30-29_00550",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 77679,
+      "bbox": [
+        0,
+        142,
+        137,
+        567
+      ],
+      "category_id": 2,
+      "id": 147,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-30-29_00550",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 33831,
+      "bbox": [
+        859,
+        256,
+        189,
+        179
+      ],
+      "category_id": 3,
+      "id": 155,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-15-15_01210",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 30267,
+      "bbox": [
+        632,
+        276,
+        177,
+        171
+      ],
+      "category_id": 3,
+      "id": 156,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03120",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 36160,
+      "bbox": [
+        0,
+        300,
+        113,
+        320
+      ],
+      "category_id": 3,
+      "id": 157,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03120",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.46
+    },
+    {
+      "area": 33640,
+      "bbox": [
+        164,
+        317,
+        232,
+        145
+      ],
+      "category_id": 3,
+      "id": 158,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03120",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 15444,
+      "bbox": [
+        396,
+        313,
+        143,
+        108
+      ],
+      "category_id": 3,
+      "id": 159,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03120",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 9879,
+      "bbox": [
+        501,
+        306,
+        111,
+        89
+      ],
+      "category_id": 3,
+      "id": 160,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03120",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3869,
+      "bbox": [
+        589,
+        326,
+        73,
+        53
+      ],
+      "category_id": 3,
+      "id": 161,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03120",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        0,
+        199,
+        0,
+        569
+      ],
+      "category_id": 3,
+      "id": 162,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-02-37_00150",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.98
+    },
+    {
+      "area": 4484,
+      "bbox": [
+        484,
+        317,
+        76,
+        59
+      ],
+      "category_id": 3,
+      "id": 201,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_02640",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2256,
+      "bbox": [
+        520,
+        313,
+        48,
+        47
+      ],
+      "category_id": 3,
+      "id": 202,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_02640",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 899,
+      "bbox": [
+        516,
+        286,
+        29,
+        31
+      ],
+      "category_id": 3,
+      "id": 203,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_02640",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1645,
+      "bbox": [
+        517,
+        309,
+        47,
+        35
+      ],
+      "category_id": 3,
+      "id": 204,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_02640",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3740,
+      "bbox": [
+        529,
+        214,
+        68,
+        55
+      ],
+      "category_id": 3,
+      "id": 205,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-30-29_02630",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 172125,
+      "bbox": [
+        462,
+        274,
+        459,
+        375
+      ],
+      "category_id": 3,
+      "id": 206,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-30-29_02630",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 8748,
+      "bbox": [
+        548,
+        205,
+        108,
+        81
+      ],
+      "category_id": 3,
+      "id": 207,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-30-29_02630",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        198,
+        0,
+        82
+      ],
+      "category_id": 2,
+      "id": 208,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-30-29_02630",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        202,
+        0,
+        104
+      ],
+      "category_id": 2,
+      "id": 209,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-30-29_02630",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 64001,
+      "bbox": [
+        151,
+        285,
+        287,
+        223
+      ],
+      "category_id": 3,
+      "id": 224,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-02-37_02700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 26304,
+      "bbox": [
+        321,
+        309,
+        192,
+        137
+      ],
+      "category_id": 3,
+      "id": 245,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-09-31_01850",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 50343,
+      "bbox": [
+        1107,
+        125,
+        173,
+        291
+      ],
+      "category_id": 0,
+      "id": 246,
+      "ignore": 1,
+      "image_id": "2018-10-29_15-09-31_01850",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 13770,
+      "bbox": [
+        917,
+        348,
+        135,
+        102
+      ],
+      "category_id": 3,
+      "id": 257,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-07-47_00510",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 12324,
+      "bbox": [
+        612,
+        342,
+        156,
+        79
+      ],
+      "category_id": 3,
+      "id": 258,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-07-47_00510",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 18800,
+      "bbox": [
+        146,
+        317,
+        100,
+        188
+      ],
+      "category_id": 2,
+      "id": 259,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-07-47_00510",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 19182,
+      "bbox": [
+        779,
+        285,
+        138,
+        139
+      ],
+      "category_id": 3,
+      "id": 269,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-15-15_01200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1872,
+      "bbox": [
+        637,
+        329,
+        52,
+        36
+      ],
+      "category_id": 0,
+      "id": 305,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-02-37_02730",
+      "iscrowd": 0,
+      "name": "Vehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1326,
+      "bbox": [
+        455,
+        334,
+        39,
+        34
+      ],
+      "category_id": 3,
+      "id": 326,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-50-14_01900",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2115,
+      "bbox": [
+        508,
+        333,
+        47,
+        45
+      ],
+      "category_id": 3,
+      "id": 327,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-50-14_01900",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2256,
+      "bbox": [
+        519,
+        332,
+        48,
+        47
+      ],
+      "category_id": 3,
+      "id": 328,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-50-14_01900",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 56726,
+      "bbox": [
+        519,
+        191,
+        226,
+        251
+      ],
+      "category_id": 1,
+      "id": 329,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-50-14_01900",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3780,
+      "bbox": [
+        377,
+        304,
+        60,
+        63
+      ],
+      "category_id": 1,
+      "id": 330,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-50-14_01900",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3551,
+      "bbox": [
+        329,
+        336,
+        67,
+        53
+      ],
+      "category_id": 3,
+      "id": 342,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03570",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 15846,
+      "bbox": [
+        212,
+        318,
+        139,
+        114
+      ],
+      "category_id": 3,
+      "id": 343,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03570",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 5148,
+      "bbox": [
+        445,
+        316,
+        78,
+        66
+      ],
+      "category_id": 3,
+      "id": 344,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03570",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2958,
+      "bbox": [
+        674,
+        281,
+        58,
+        51
+      ],
+      "category_id": 3,
+      "id": 351,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-46-53_01800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 6256,
+      "bbox": [
+        674,
+        224,
+        68,
+        92
+      ],
+      "category_id": 1,
+      "id": 352,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-46-53_01800",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1749,
+      "bbox": [
+        301,
+        333,
+        53,
+        33
+      ],
+      "category_id": 0,
+      "id": 357,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-50-46_07930",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 53383,
+      "bbox": [
+        592,
+        167,
+        211,
+        253
+      ],
+      "category_id": 1,
+      "id": 358,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_07930",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2400,
+      "bbox": [
+        897,
+        301,
+        30,
+        80
+      ],
+      "category_id": 2,
+      "id": 359,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_07930",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 20178,
+      "bbox": [
+        1097,
+        278,
+        177,
+        114
+      ],
+      "category_id": 3,
+      "id": 384,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-07-47_00790",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        0,
+        342,
+        0,
+        66
+      ],
+      "category_id": 3,
+      "id": 385,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-07-47_00790",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 17313,
+      "bbox": [
+        30,
+        342,
+        199,
+        87
+      ],
+      "category_id": 3,
+      "id": 389,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-07-47_00520",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 59295,
+      "bbox": [
+        202,
+        341,
+        295,
+        201
+      ],
+      "category_id": 3,
+      "id": 390,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-07-47_00520",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        12,
+        0,
+        613
+      ],
+      "category_id": 3,
+      "id": 404,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03720",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.98
+    },
+    {
+      "area": 4256,
+      "bbox": [
+        640,
+        315,
+        76,
+        56
+      ],
+      "category_id": 3,
+      "id": 405,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03720",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3905,
+      "bbox": [
+        748,
+        311,
+        71,
+        55
+      ],
+      "category_id": 3,
+      "id": 406,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03720",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 61344,
+      "bbox": [
+        0,
+        202,
+        432,
+        142
+      ],
+      "category_id": 0,
+      "id": 407,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-27-03_03720",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 1.0
+    },
+    {
+      "area": 1638,
+      "bbox": [
+        1007,
+        321,
+        26,
+        63
+      ],
+      "category_id": 2,
+      "id": 425,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-19-12_00560",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 40698,
+      "bbox": [
+        97,
+        303,
+        238,
+        171
+      ],
+      "category_id": 3,
+      "id": 433,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03360",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 14950,
+      "bbox": [
+        204,
+        314,
+        130,
+        115
+      ],
+      "category_id": 3,
+      "id": 434,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03360",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 5032,
+      "bbox": [
+        276,
+        325,
+        74,
+        68
+      ],
+      "category_id": 3,
+      "id": 435,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03360",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 10152,
+      "bbox": [
+        532,
+        305,
+        108,
+        94
+      ],
+      "category_id": 3,
+      "id": 436,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03360",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 11134,
+      "bbox": [
+        0,
+        0,
+        19,
+        586
+      ],
+      "category_id": 1,
+      "id": 437,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03360",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.99
+    },
+    {
+      "area": 7216,
+      "bbox": [
+        288,
+        296,
+        88,
+        82
+      ],
+      "category_id": 1,
+      "id": 438,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-10-40_03360",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2745,
+      "bbox": [
+        473,
+        340,
+        61,
+        45
+      ],
+      "category_id": 3,
+      "id": 513,
+      "ignore": 0,
+      "image_id": "2018-10-29_16-00-52_04650",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 65098,
+      "bbox": [
+        931,
+        199,
+        269,
+        242
+      ],
+      "category_id": 3,
+      "id": 516,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03670",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 4788,
+      "bbox": [
+        630,
+        319,
+        84,
+        57
+      ],
+      "category_id": 3,
+      "id": 517,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03670",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2376,
+      "bbox": [
+        715,
+        314,
+        54,
+        44
+      ],
+      "category_id": 3,
+      "id": 518,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03670",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2408,
+      "bbox": [
+        361,
+        306,
+        56,
+        43
+      ],
+      "category_id": 0,
+      "id": 519,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-27-03_03670",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1452,
+      "bbox": [
+        987,
+        313,
+        44,
+        33
+      ],
+      "category_id": 3,
+      "id": 534,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-18-59_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 31871,
+      "bbox": [
+        373,
+        306,
+        203,
+        157
+      ],
+      "category_id": 3,
+      "id": 556,
+      "ignore": 0,
+      "image_id": "2018-10-29_16-00-52_03500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 6660,
+      "bbox": [
+        659,
+        312,
+        90,
+        74
+      ],
+      "category_id": 3,
+      "id": 592,
+      "ignore": 0,
+      "image_id": "2018-02-04_13-26-00_00200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 8798,
+      "bbox": [
+        451,
+        306,
+        106,
+        83
+      ],
+      "category_id": 3,
+      "id": 593,
+      "ignore": 0,
+      "image_id": "2018-02-04_13-26-00_00200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1457,
+      "bbox": [
+        646,
+        319,
+        47,
+        31
+      ],
+      "category_id": 3,
+      "id": 594,
+      "ignore": 0,
+      "image_id": "2018-02-04_13-26-00_00200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3654,
+      "bbox": [
+        0,
+        332,
+        63,
+        58
+      ],
+      "category_id": 0,
+      "id": 595,
+      "ignore": 1,
+      "image_id": "2018-02-04_13-26-00_00200",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2496,
+      "bbox": [
+        171,
+        334,
+        64,
+        39
+      ],
+      "category_id": 0,
+      "id": 596,
+      "ignore": 1,
+      "image_id": "2018-02-04_13-26-00_00200",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2142,
+      "bbox": [
+        255,
+        328,
+        63,
+        34
+      ],
+      "category_id": 0,
+      "id": 597,
+      "ignore": 1,
+      "image_id": "2018-02-04_13-26-00_00200",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 40152,
+      "bbox": [
+        648,
+        164,
+        168,
+        239
+      ],
+      "category_id": 1,
+      "id": 643,
+      "ignore": 0,
+      "image_id": "2018-12-12_10-05-19_00200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 29890,
+      "bbox": [
+        0,
+        278,
+        61,
+        490
+      ],
+      "category_id": 3,
+      "id": 647,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.81
+    },
+    {
+      "area": 35055,
+      "bbox": [
+        168,
+        306,
+        205,
+        171
+      ],
+      "category_id": 3,
+      "id": 648,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 19968,
+      "bbox": [
+        681,
+        315,
+        156,
+        128
+      ],
+      "category_id": 3,
+      "id": 649,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 7760,
+      "bbox": [
+        482,
+        329,
+        97,
+        80
+      ],
+      "category_id": 3,
+      "id": 650,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 4060,
+      "bbox": [
+        539,
+        335,
+        70,
+        58
+      ],
+      "category_id": 3,
+      "id": 651,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2700,
+      "bbox": [
+        588,
+        318,
+        50,
+        54
+      ],
+      "category_id": 3,
+      "id": 652,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2576,
+      "bbox": [
+        605,
+        338,
+        56,
+        46
+      ],
+      "category_id": 3,
+      "id": 653,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 77100,
+      "bbox": [
+        399,
+        249,
+        300,
+        257
+      ],
+      "category_id": 3,
+      "id": 664,
+      "ignore": 0,
+      "image_id": "2018-12-12_09-22-59_04300",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 6370,
+      "bbox": [
+        641,
+        312,
+        91,
+        70
+      ],
+      "category_id": 3,
+      "id": 671,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_04200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1476,
+      "bbox": [
+        697,
+        325,
+        41,
+        36
+      ],
+      "category_id": 3,
+      "id": 672,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_04200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1680,
+      "bbox": [
+        687,
+        313,
+        40,
+        42
+      ],
+      "category_id": 3,
+      "id": 673,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_04200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 5502,
+      "bbox": [
+        240,
+        316,
+        131,
+        42
+      ],
+      "category_id": 0,
+      "id": 674,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-27-03_04200",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 13786,
+      "bbox": [
+        819,
+        254,
+        113,
+        122
+      ],
+      "category_id": 1,
+      "id": 675,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_04200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 6532,
+      "bbox": [
+        759,
+        265,
+        71,
+        92
+      ],
+      "category_id": 1,
+      "id": 676,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_04200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1776,
+      "bbox": [
+        740,
+        301,
+        37,
+        48
+      ],
+      "category_id": 1,
+      "id": 677,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_04200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1140,
+      "bbox": [
+        733,
+        311,
+        30,
+        38
+      ],
+      "category_id": 1,
+      "id": 678,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_04200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 9048,
+      "bbox": [
+        512,
+        320,
+        104,
+        87
+      ],
+      "category_id": 3,
+      "id": 679,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-37-47_00000",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2320,
+      "bbox": [
+        672,
+        343,
+        58,
+        40
+      ],
+      "category_id": 3,
+      "id": 680,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-37-47_00000",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 16650,
+      "bbox": [
+        816,
+        335,
+        150,
+        111
+      ],
+      "category_id": 3,
+      "id": 681,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_00550",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1760,
+      "bbox": [
+        929,
+        342,
+        44,
+        40
+      ],
+      "category_id": 3,
+      "id": 682,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_00550",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1984,
+      "bbox": [
+        1055,
+        340,
+        64,
+        31
+      ],
+      "category_id": 3,
+      "id": 683,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_00550",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2584,
+      "bbox": [
+        1021,
+        331,
+        68,
+        38
+      ],
+      "category_id": 0,
+      "id": 684,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_00550",
+      "iscrowd": 0,
+      "name": "Obstacle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1900,
+      "bbox": [
+        391,
+        260,
+        50,
+        38
+      ],
+      "category_id": 3,
+      "id": 685,
+      "ignore": 0,
+      "image_id": "2018-10-29_16-00-52_05400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2491,
+      "bbox": [
+        733,
+        285,
+        53,
+        47
+      ],
+      "category_id": 0,
+      "id": 686,
+      "ignore": 1,
+      "image_id": "2018-10-29_16-00-52_05400",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 4050,
+      "bbox": [
+        420,
+        317,
+        75,
+        54
+      ],
+      "category_id": 3,
+      "id": 709,
+      "ignore": 0,
+      "image_id": "2018-03-15_09-39-45_00200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 54672,
+      "bbox": [
+        590,
+        153,
+        201,
+        272
+      ],
+      "category_id": 1,
+      "id": 710,
+      "ignore": 0,
+      "image_id": "2018-03-15_09-39-45_00200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 29920,
+      "bbox": [
+        579,
+        286,
+        187,
+        160
+      ],
+      "category_id": 3,
+      "id": 725,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-18-59_03400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 12236,
+      "bbox": [
+        343,
+        305,
+        133,
+        92
+      ],
+      "category_id": 3,
+      "id": 726,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-18-59_03400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1776,
+      "bbox": [
+        546,
+        307,
+        48,
+        37
+      ],
+      "category_id": 3,
+      "id": 727,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-18-59_03400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        0,
+        281,
+        0,
+        138
+      ],
+      "category_id": 0,
+      "id": 728,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-18-59_03400",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.5
+    },
+    {
+      "area": 11289,
+      "bbox": [
+        382,
+        265,
+        159,
+        71
+      ],
+      "category_id": 0,
+      "id": 729,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-18-59_03400",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 20740,
+      "bbox": [
+        157,
+        228,
+        170,
+        122
+      ],
+      "category_id": 0,
+      "id": 730,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-18-59_03400",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 38212,
+      "bbox": [
+        596,
+        145,
+        164,
+        233
+      ],
+      "category_id": 1,
+      "id": 731,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-18-59_03400",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 66080,
+      "bbox": [
+        714,
+        249,
+        280,
+        236
+      ],
+      "category_id": 3,
+      "id": 752,
+      "ignore": 0,
+      "image_id": "2018-12-12_09-22-59_05600",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 6732,
+      "bbox": [
+        424,
+        313,
+        99,
+        68
+      ],
+      "category_id": 3,
+      "id": 757,
+      "ignore": 0,
+      "image_id": "2018-10-29_16-18-47_01600",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1734,
+      "bbox": [
+        162,
+        289,
+        51,
+        34
+      ],
+      "category_id": 3,
+      "id": 758,
+      "ignore": 0,
+      "image_id": "2018-10-29_16-18-47_01600",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 12800,
+      "bbox": [
+        612,
+        309,
+        128,
+        100
+      ],
+      "category_id": 3,
+      "id": 759,
+      "ignore": 0,
+      "image_id": "2018-12-12_09-22-59_03300",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 51798,
+      "bbox": [
+        953,
+        284,
+        267,
+        194
+      ],
+      "category_id": 3,
+      "id": 771,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-50-14_03400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        291,
+        0,
+        107
+      ],
+      "category_id": 3,
+      "id": 772,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-50-14_03400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 181146,
+      "bbox": [
+        220,
+        166,
+        681,
+        266
+      ],
+      "category_id": 3,
+      "id": 786,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-50-14_02800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 16456,
+      "bbox": [
+        0,
+        203,
+        68,
+        242
+      ],
+      "category_id": 3,
+      "id": 787,
+      "ignore": 0,
+      "image_id": "2018-10-29_14-50-14_02800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.65
+    },
+    {
+      "area": 16560,
+      "bbox": [
+        646,
+        310,
+        144,
+        115
+      ],
+      "category_id": 3,
+      "id": 807,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-42-40_01000",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1950,
+      "bbox": [
+        746,
+        320,
+        50,
+        39
+      ],
+      "category_id": 3,
+      "id": 808,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-42-40_01000",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2035,
+      "bbox": [
+        476,
+        324,
+        55,
+        37
+      ],
+      "category_id": 3,
+      "id": 809,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-42-40_01000",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 64428,
+      "bbox": [
+        947,
+        242,
+        273,
+        236
+      ],
+      "category_id": 3,
+      "id": 810,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-42-40_01000",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 28952,
+      "bbox": [
+        892,
+        289,
+        188,
+        154
+      ],
+      "category_id": 3,
+      "id": 811,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-42-40_01000",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 11913,
+      "bbox": [
+        1223,
+        237,
+        57,
+        209
+      ],
+      "category_id": 2,
+      "id": 812,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-42-40_01000",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 17748,
+      "bbox": [
+        641,
+        316,
+        153,
+        116
+      ],
+      "category_id": 3,
+      "id": 820,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_05400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 5544,
+      "bbox": [
+        823,
+        303,
+        77,
+        72
+      ],
+      "category_id": 3,
+      "id": 821,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_05400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 896,
+      "bbox": [
+        754,
+        326,
+        32,
+        28
+      ],
+      "category_id": 3,
+      "id": 822,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_05400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 43208,
+      "bbox": [
+        185,
+        270,
+        491,
+        88
+      ],
+      "category_id": 0,
+      "id": 823,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-27-03_05400",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 238848,
+      "bbox": [
+        969,
+        0,
+        311,
+        768
+      ],
+      "category_id": 1,
+      "id": 824,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_05400",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.99
+    },
+    {
+      "area": 8100,
+      "bbox": [
+        794,
+        255,
+        75,
+        108
+      ],
+      "category_id": 1,
+      "id": 825,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_05400",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 31948,
+      "bbox": [
+        616,
+        321,
+        196,
+        163
+      ],
+      "category_id": 3,
+      "id": 842,
+      "ignore": 0,
+      "image_id": "2018-12-12_09-22-59_03900",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 5742,
+      "bbox": [
+        699,
+        325,
+        87,
+        66
+      ],
+      "category_id": 3,
+      "id": 854,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_04300",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2530,
+      "bbox": [
+        750,
+        324,
+        55,
+        46
+      ],
+      "category_id": 3,
+      "id": 855,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_04300",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 13392,
+      "bbox": [
+        260,
+        271,
+        144,
+        93
+      ],
+      "category_id": 0,
+      "id": 856,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-50-46_04300",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 7008,
+      "bbox": [
+        658,
+        332,
+        96,
+        73
+      ],
+      "category_id": 3,
+      "id": 864,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_04400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2793,
+      "bbox": [
+        696,
+        333,
+        57,
+        49
+      ],
+      "category_id": 3,
+      "id": 865,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_04400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2736,
+      "bbox": [
+        694,
+        333,
+        57,
+        48
+      ],
+      "category_id": 3,
+      "id": 866,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_04400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1190,
+      "bbox": [
+        638,
+        342,
+        35,
+        34
+      ],
+      "category_id": 3,
+      "id": 867,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_04400",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 4590,
+      "bbox": [
+        173,
+        315,
+        85,
+        54
+      ],
+      "category_id": 0,
+      "id": 868,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-50-46_04400",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3000,
+      "bbox": [
+        780,
+        321,
+        60,
+        50
+      ],
+      "category_id": 3,
+      "id": 875,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-37-47_04800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1320,
+      "bbox": [
+        807,
+        329,
+        40,
+        33
+      ],
+      "category_id": 3,
+      "id": 876,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-37-47_04800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 8200,
+      "bbox": [
+        697,
+        268,
+        82,
+        100
+      ],
+      "category_id": 1,
+      "id": 877,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-37-47_04800",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 33135,
+      "bbox": [
+        0,
+        294,
+        235,
+        141
+      ],
+      "category_id": 3,
+      "id": 883,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_00500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        215,
+        0,
+        540
+      ],
+      "category_id": 3,
+      "id": 884,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_00500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.66
+    },
+    {
+      "area": 28598,
+      "bbox": [
+        600,
+        288,
+        181,
+        158
+      ],
+      "category_id": 3,
+      "id": 892,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-18-59_03700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 6768,
+      "bbox": [
+        496,
+        303,
+        94,
+        72
+      ],
+      "category_id": 3,
+      "id": 893,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-18-59_03700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1122,
+      "bbox": [
+        577,
+        307,
+        34,
+        33
+      ],
+      "category_id": 3,
+      "id": 894,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-18-59_03700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 5106,
+      "bbox": [
+        0,
+        305,
+        74,
+        69
+      ],
+      "category_id": 0,
+      "id": 895,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-18-59_03700",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1110,
+      "bbox": [
+        471,
+        301,
+        37,
+        30
+      ],
+      "category_id": 0,
+      "id": 896,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-18-59_03700",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 49410,
+      "bbox": [
+        592,
+        121,
+        183,
+        270
+      ],
+      "category_id": 1,
+      "id": 897,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-18-59_03700",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 17922,
+      "bbox": [
+        888,
+        259,
+        206,
+        87
+      ],
+      "category_id": 0,
+      "id": 943,
+      "ignore": 0,
+      "image_id": "2018-03-15_09-25-52_00200",
+      "iscrowd": 0,
+      "name": "Vehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 79305,
+      "bbox": [
+        449,
+        96,
+        311,
+        255
+      ],
+      "category_id": 1,
+      "id": 944,
+      "ignore": 0,
+      "image_id": "2018-03-15_09-25-52_00200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 55385,
+      "bbox": [
+        746,
+        165,
+        265,
+        209
+      ],
+      "category_id": 1,
+      "id": 945,
+      "ignore": 0,
+      "image_id": "2018-03-15_09-25-52_00200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 62715,
+      "bbox": [
+        0,
+        231,
+        555,
+        113
+      ],
+      "category_id": 1,
+      "id": 946,
+      "ignore": 0,
+      "image_id": "2018-03-15_09-25-52_00200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        0,
+        132,
+        0,
+        274
+      ],
+      "category_id": 1,
+      "id": 947,
+      "ignore": 0,
+      "image_id": "2018-03-15_09-25-52_00200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.55
+    },
+    {
+      "area": 34307,
+      "bbox": [
+        576,
+        204,
+        203,
+        169
+      ],
+      "category_id": 1,
+      "id": 948,
+      "ignore": 0,
+      "image_id": "2018-03-15_09-25-52_00200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3240,
+      "bbox": [
+        770,
+        217,
+        40,
+        81
+      ],
+      "category_id": 2,
+      "id": 949,
+      "ignore": 0,
+      "image_id": "2018-03-15_09-25-52_00200",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 70635,
+      "bbox": [
+        636,
+        180,
+        255,
+        277
+      ],
+      "category_id": 1,
+      "id": 950,
+      "ignore": 0,
+      "image_id": "2018-12-12_09-44-13_00400",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3380,
+      "bbox": [
+        645,
+        320,
+        65,
+        52
+      ],
+      "category_id": 3,
+      "id": 951,
+      "ignore": 0,
+      "image_id": "2019-01-09_09-34-13_01500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 5963,
+      "bbox": [
+        830,
+        322,
+        89,
+        67
+      ],
+      "category_id": 3,
+      "id": 952,
+      "ignore": 0,
+      "image_id": "2019-01-09_09-34-13_01500",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 39060,
+      "bbox": [
+        0,
+        163,
+        155,
+        252
+      ],
+      "category_id": 0,
+      "id": 953,
+      "ignore": 1,
+      "image_id": "2019-01-09_09-34-13_01500",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 4420,
+      "bbox": [
+        412,
+        286,
+        65,
+        68
+      ],
+      "category_id": 0,
+      "id": 954,
+      "ignore": 1,
+      "image_id": "2019-01-09_09-34-13_01500",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 5767,
+      "bbox": [
+        718,
+        288,
+        79,
+        73
+      ],
+      "category_id": 1,
+      "id": 955,
+      "ignore": 0,
+      "image_id": "2019-01-09_09-34-13_01500",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1480,
+      "bbox": [
+        634,
+        309,
+        40,
+        37
+      ],
+      "category_id": 1,
+      "id": 956,
+      "ignore": 0,
+      "image_id": "2019-01-09_09-34-13_01500",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 16740,
+      "bbox": [
+        646,
+        278,
+        135,
+        124
+      ],
+      "category_id": 3,
+      "id": 958,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_05700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1152,
+      "bbox": [
+        637,
+        323,
+        36,
+        32
+      ],
+      "category_id": 3,
+      "id": 959,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_05700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 4235,
+      "bbox": [
+        296,
+        289,
+        77,
+        55
+      ],
+      "category_id": 0,
+      "id": 960,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-27-03_05700",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 17082,
+      "bbox": [
+        657,
+        216,
+        117,
+        146
+      ],
+      "category_id": 1,
+      "id": 961,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_05700",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 8100,
+      "bbox": [
+        653,
+        324,
+        108,
+        75
+      ],
+      "category_id": 3,
+      "id": 974,
+      "ignore": 0,
+      "image_id": "2018-12-21_10-52-52_01300",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 4440,
+      "bbox": [
+        747,
+        285,
+        60,
+        74
+      ],
+      "category_id": 1,
+      "id": 975,
+      "ignore": 0,
+      "image_id": "2018-12-21_10-52-52_01300",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1376,
+      "bbox": [
+        738,
+        306,
+        32,
+        43
+      ],
+      "category_id": 1,
+      "id": 976,
+      "ignore": 0,
+      "image_id": "2018-12-21_10-52-52_01300",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 18375,
+      "bbox": [
+        662,
+        291,
+        147,
+        125
+      ],
+      "category_id": 3,
+      "id": 982,
+      "ignore": 0,
+      "image_id": "2018-12-12_09-22-59_03800",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 15224,
+      "bbox": [
+        680,
+        299,
+        173,
+        88
+      ],
+      "category_id": 3,
+      "id": 1020,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-23-49_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        280,
+        0,
+        60
+      ],
+      "category_id": 3,
+      "id": 1021,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-23-49_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        289,
+        0,
+        60
+      ],
+      "category_id": 3,
+      "id": 1022,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-23-49_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.5
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        280,
+        0,
+        68
+      ],
+      "category_id": 3,
+      "id": 1023,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-23-49_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 127302,
+      "bbox": [
+        0,
+        221,
+        866,
+        147
+      ],
+      "category_id": 1,
+      "id": 1024,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-23-49_00100",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 7965,
+      "bbox": [
+        1041,
+        251,
+        135,
+        59
+      ],
+      "category_id": 1,
+      "id": 1025,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-23-49_00100",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 10602,
+      "bbox": [
+        861,
+        259,
+        186,
+        57
+      ],
+      "category_id": 1,
+      "id": 1026,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-23-49_00100",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 960,
+      "bbox": [
+        1128,
+        294,
+        20,
+        48
+      ],
+      "category_id": 2,
+      "id": 1027,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-23-49_00100",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        0,
+        312,
+        0,
+        51
+      ],
+      "category_id": 2,
+      "id": 1028,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-23-49_00100",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 38025,
+      "bbox": [
+        599,
+        176,
+        169,
+        225
+      ],
+      "category_id": 1,
+      "id": 1046,
+      "ignore": 0,
+      "image_id": "2018-12-12_09-34-31_03900",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1900,
+      "bbox": [
+        733,
+        318,
+        50,
+        38
+      ],
+      "category_id": 3,
+      "id": 1047,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03200",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 4565,
+      "bbox": [
+        151,
+        316,
+        83,
+        55
+      ],
+      "category_id": 0,
+      "id": 1048,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-27-03_03200",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 8672,
+      "bbox": [
+        1248,
+        142,
+        32,
+        271
+      ],
+      "category_id": 0,
+      "id": 1049,
+      "ignore": 1,
+      "image_id": "2018-10-08_08-27-03_03200",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 700,
+      "bbox": [
+        818,
+        310,
+        25,
+        28
+      ],
+      "category_id": 0,
+      "id": 1050,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03200",
+      "iscrowd": 0,
+      "name": "Vehicle",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 10290,
+      "bbox": [
+        833,
+        277,
+        105,
+        98
+      ],
+      "category_id": 1,
+      "id": 1051,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2891,
+      "bbox": [
+        823,
+        287,
+        49,
+        59
+      ],
+      "category_id": 1,
+      "id": 1052,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3360,
+      "bbox": [
+        841,
+        338,
+        96,
+        35
+      ],
+      "category_id": 1,
+      "id": 1053,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-27-03_03200",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 4466,
+      "bbox": [
+        795,
+        302,
+        77,
+        58
+      ],
+      "category_id": 3,
+      "id": 1066,
+      "ignore": 0,
+      "image_id": "2018-10-29_16-18-47_01100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1200,
+      "bbox": [
+        738,
+        315,
+        40,
+        30
+      ],
+      "category_id": 3,
+      "id": 1071,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_01100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 3657,
+      "bbox": [
+        569,
+        312,
+        69,
+        53
+      ],
+      "category_id": 3,
+      "id": 1072,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-50-46_01100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 61567,
+      "bbox": [
+        1,
+        279,
+        319,
+        193
+      ],
+      "category_id": 3,
+      "id": 1089,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-18-59_02650",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 29328,
+      "bbox": [
+        622,
+        277,
+        188,
+        156
+      ],
+      "category_id": 3,
+      "id": 1090,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-18-59_02650",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 52866,
+      "bbox": [
+        585,
+        115,
+        198,
+        267
+      ],
+      "category_id": 1,
+      "id": 1091,
+      "ignore": 0,
+      "image_id": "2018-10-08_08-18-59_02650",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 4560,
+      "bbox": [
+        452,
+        336,
+        80,
+        57
+      ],
+      "category_id": 3,
+      "id": 1108,
+      "ignore": 0,
+      "image_id": "2018-10-29_15-02-37_00240",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 19434,
+      "bbox": [
+        969,
+        275,
+        158,
+        123
+      ],
+      "category_id": 3,
+      "id": 1121,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 13440,
+      "bbox": [
+        1015,
+        272,
+        140,
+        96
+      ],
+      "category_id": 3,
+      "id": 1122,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 160500,
+      "bbox": [
+        597,
+        221,
+        428,
+        375
+      ],
+      "category_id": 3,
+      "id": 1123,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1520,
+      "bbox": [
+        1260,
+        259,
+        20,
+        76
+      ],
+      "category_id": 3,
+      "id": 1124,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 5175,
+      "bbox": [
+        1205,
+        256,
+        75,
+        69
+      ],
+      "category_id": 3,
+      "id": 1125,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        195,
+        0,
+        208
+      ],
+      "category_id": 3,
+      "id": 1126,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.53
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        241,
+        0,
+        43
+      ],
+      "category_id": 3,
+      "id": 1127,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        257,
+        0,
+        118
+      ],
+      "category_id": 3,
+      "id": 1128,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        248,
+        0,
+        109
+      ],
+      "category_id": 3,
+      "id": 1129,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        207,
+        0,
+        222
+      ],
+      "category_id": 3,
+      "id": 1130,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.93
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        226,
+        0,
+        55
+      ],
+      "category_id": 3,
+      "id": 1131,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 2.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 12348,
+      "bbox": [
+        564,
+        279,
+        126,
+        98
+      ],
+      "category_id": 0,
+      "id": 1132,
+      "ignore": 1,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 33864,
+      "bbox": [
+        964,
+        187,
+        249,
+        136
+      ],
+      "category_id": 1,
+      "id": 1133,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 0,
+      "bbox": [
+        1280,
+        229,
+        0,
+        42
+      ],
+      "category_id": 2,
+      "id": 1134,
+      "ignore": 0,
+      "image_id": "2019-01-09_08-27-29_00100",
+      "iscrowd": 0,
+      "name": "Pedestrian",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 18564,
+      "bbox": [
+        653,
+        293,
+        156,
+        119
+      ],
+      "category_id": 3,
+      "id": 1142,
+      "ignore": 0,
+      "image_id": "2018-12-21_10-52-52_02700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2021,
+      "bbox": [
+        647,
+        306,
+        47,
+        43
+      ],
+      "category_id": 3,
+      "id": 1143,
+      "ignore": 0,
+      "image_id": "2018-12-21_10-52-52_02700",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 3.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1470,
+      "bbox": [
+        221,
+        300,
+        49,
+        30
+      ],
+      "category_id": 0,
+      "id": 1144,
+      "ignore": 1,
+      "image_id": "2018-12-21_10-52-52_02700",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 30060,
+      "bbox": [
+        777,
+        188,
+        167,
+        180
+      ],
+      "category_id": 1,
+      "id": 1145,
+      "ignore": 0,
+      "image_id": "2018-12-21_10-52-52_02700",
+      "iscrowd": 0,
+      "name": "LargeVehicle",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 8300,
+      "bbox": [
+        641,
+        318,
+        100,
+        83
+      ],
+      "category_id": 3,
+      "id": 1189,
+      "ignore": 0,
+      "image_id": "2018-02-04_12-47-32_00000",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 14550,
+      "bbox": [
+        0,
+        312,
+        97,
+        150
+      ],
+      "category_id": 3,
+      "id": 1190,
+      "ignore": 0,
+      "image_id": "2018-02-04_12-47-32_00000",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1485,
+      "bbox": [
+        461,
+        321,
+        45,
+        33
+      ],
+      "category_id": 3,
+      "id": 1191,
+      "ignore": 0,
+      "image_id": "2018-02-04_12-47-32_00000",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1015,
+      "bbox": [
+        539,
+        322,
+        35,
+        29
+      ],
+      "category_id": 3,
+      "id": 1192,
+      "ignore": 0,
+      "image_id": "2018-02-04_12-47-32_00000",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1386,
+      "bbox": [
+        612,
+        317,
+        42,
+        33
+      ],
+      "category_id": 3,
+      "id": 1193,
+      "ignore": 0,
+      "image_id": "2018-02-04_12-47-32_00000",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2183,
+      "bbox": [
+        33,
+        316,
+        59,
+        37
+      ],
+      "category_id": 0,
+      "id": 1194,
+      "ignore": 1,
+      "image_id": "2018-02-04_12-47-32_00000",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 1408,
+      "bbox": [
+        211,
+        319,
+        44,
+        32
+      ],
+      "category_id": 0,
+      "id": 1195,
+      "ignore": 1,
+      "image_id": "2018-02-04_12-47-32_00000",
+      "iscrowd": 0,
+      "name": "DontCare",
+      "occlusion": -1.0,
+      "segmentation": [],
+      "truncated": 0.0
+    },
+    {
+      "area": 2236,
+      "bbox": [
+        593,
+        352,
+        52,
+        43
+      ],
+      "category_id": 3,
+      "id": 1196,
+      "ignore": 0,
+      "image_id": "2018-03-15_09-36-51_00100",
+      "iscrowd": 0,
+      "name": "PassengerCar",
+      "occlusion": 0.0,
+      "segmentation": [],
+      "truncated": 0.0
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "LargeVehicle",
+      "supercategory": "none"
+    },
+    {
+      "id": 2,
+      "name": "Person",
+      "supercategory": "none"
+    },
+    {
+      "id": 3,
+      "name": "Car",
+      "supercategory": "none"
+    },
+    {
+      "id": 4,
+      "name": "RidableVehicle",
+      "supercategory": "none"
+    },
+    {
+      "id": 0,
+      "name": "DontCare",
+      "supercategory": "none"
+    }
+  ],
+  "images": [
+    {
+      "file_name": "2018-12-21_10-52-52_02700.tiff",
+      "height": 768,
+      "id": "2018-12-21_10-52-52_02700",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-02-37_02700.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-02-37_02700",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-10-40_03120.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-10-40_03120",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-18-59_03400.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-18-59_03400",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-37-47_00000.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-37-47_00000",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-02-37_02730.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-02-37_02730",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_14-30-29_00550.tiff",
+      "height": 768,
+      "id": "2018-10-29_14-30-29_00550",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-50-46_04300.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-50-46_04300",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-07-47_00520.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-07-47_00520",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-50-46_04400.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-50-46_04400",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_14-50-14_03400.tiff",
+      "height": 768,
+      "id": "2018-10-29_14-50-14_03400",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-27-03_05700.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-27-03_05700",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-12-12_09-22-59_04300.tiff",
+      "height": 768,
+      "id": "2018-12-12_09-22-59_04300",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-42-40_01000.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-42-40_01000",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-09-31_01850.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-09-31_01850",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-50-46_00500.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-50-46_00500",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-12-12_09-22-59_03300.tiff",
+      "height": 768,
+      "id": "2018-12-12_09-22-59_03300",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-15-15_01200.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-15-15_01200",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-10-40_03200.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-10-40_03200",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-18-59_02650.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-18-59_02650",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-12-21_10-52-52_01300.tiff",
+      "height": 768,
+      "id": "2018-12-21_10-52-52_01300",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-02-04_13-26-00_00200.tiff",
+      "height": 768,
+      "id": "2018-02-04_13-26-00_00200",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-27-03_03800.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-27-03_03800",
+      "width": 1280
+    },
+    {
+      "file_name": "2019-01-09_09-34-13_01500.tiff",
+      "height": 768,
+      "id": "2019-01-09_09-34-13_01500",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_14-50-14_01250.tiff",
+      "height": 768,
+      "id": "2018-10-29_14-50-14_01250",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_14-50-14_01900.tiff",
+      "height": 768,
+      "id": "2018-10-29_14-50-14_01900",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-03-15_09-36-51_00100.tiff",
+      "height": 768,
+      "id": "2018-03-15_09-36-51_00100",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-10-40_02640.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-10-40_02640",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-50-46_01100.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-50-46_01100",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_14-50-14_02800.tiff",
+      "height": 768,
+      "id": "2018-10-29_14-50-14_02800",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_16-18-47_01100.tiff",
+      "height": 768,
+      "id": "2018-10-29_16-18-47_01100",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-02-37_00150.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-02-37_00150",
+      "width": 1280
+    },
+    {
+      "file_name": "2019-01-09_08-23-49_00100.tiff",
+      "height": 768,
+      "id": "2019-01-09_08-23-49_00100",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-27-03_04200.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-27-03_04200",
+      "width": 1280
+    },
+    {
+      "file_name": "2019-01-09_08-27-29_00100.tiff",
+      "height": 768,
+      "id": "2019-01-09_08-27-29_00100",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_16-00-52_03500.tiff",
+      "height": 768,
+      "id": "2018-10-29_16-00-52_03500",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-12-12_09-44-13_00400.tiff",
+      "height": 768,
+      "id": "2018-12-12_09-44-13_00400",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-37-47_04800.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-37-47_04800",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-12-12_10-05-19_00200.tiff",
+      "height": 768,
+      "id": "2018-12-12_10-05-19_00200",
+      "width": 1280
+    },
+    {
+      "file_name": "2019-01-09_08-27-29_00500.tiff",
+      "height": 768,
+      "id": "2019-01-09_08-27-29_00500",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-12-12_09-22-59_03900.tiff",
+      "height": 768,
+      "id": "2018-12-12_09-22-59_03900",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-18-59_03700.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-18-59_03700",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-07-47_00510.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-07-47_00510",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-50-46_06500.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-50-46_06500",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-19-12_00560.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-19-12_00560",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_14-30-29_02630.tiff",
+      "height": 768,
+      "id": "2018-10-29_14-30-29_02630",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-53-13_01800.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-53-13_01800",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_16-00-52_05400.tiff",
+      "height": 768,
+      "id": "2018-10-29_16-00-52_05400",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-12-12_09-34-31_03900.tiff",
+      "height": 768,
+      "id": "2018-12-12_09-34-31_03900",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-27-03_03720.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-27-03_03720",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-46-53_01800.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-46-53_01800",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_16-00-52_04650.tiff",
+      "height": 768,
+      "id": "2018-10-29_16-00-52_04650",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-15-15_01210.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-15-15_01210",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-02-04_12-47-32_00000.tiff",
+      "height": 768,
+      "id": "2018-02-04_12-47-32_00000",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_16-18-47_01600.tiff",
+      "height": 768,
+      "id": "2018-10-29_16-18-47_01600",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-18-59_00100.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-18-59_00100",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-07-47_00790.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-07-47_00790",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-46-53_03300.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-46-53_03300",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-12-12_09-22-59_03800.tiff",
+      "height": 768,
+      "id": "2018-12-12_09-22-59_03800",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-03-15_09-39-45_00200.tiff",
+      "height": 768,
+      "id": "2018-03-15_09-39-45_00200",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-10-40_03360.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-10-40_03360",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_14-35-02_00700.tiff",
+      "height": 768,
+      "id": "2018-10-29_14-35-02_00700",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_15-02-37_00240.tiff",
+      "height": 768,
+      "id": "2018-10-29_15-02-37_00240",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-27-03_03670.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-27-03_03670",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-27-03_03200.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-27-03_03200",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-10-40_03370.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-10-40_03370",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-29_14-35-02_00800.tiff",
+      "height": 768,
+      "id": "2018-10-29_14-35-02_00800",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-27-03_05400.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-27-03_05400",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-50-46_07340.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-50-46_07340",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-10-40_03570.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-10-40_03570",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-12-12_09-22-59_05600.tiff",
+      "height": 768,
+      "id": "2018-12-12_09-22-59_05600",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-03-15_09-25-52_00200.tiff",
+      "height": 768,
+      "id": "2018-03-15_09-25-52_00200",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-50-46_07930.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-50-46_07930",
+      "width": 1280
+    },
+    {
+      "file_name": "2018-10-08_08-50-46_00550.tiff",
+      "height": 768,
+      "id": "2018-10-08_08-50-46_00550",
+      "width": 1280
+    }
+  ],
+  "type": "instances"
+}
