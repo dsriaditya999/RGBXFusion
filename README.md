@@ -30,7 +30,19 @@ TODO
 ### Validation
 TODO
 ### Training
-TODO
+
+## Single modality backbone and detector training
+We use single modality backbones extracted from trained object detectors.
+
+To train the FLIR rgb single modality object detector, do
+```
+bash bash/train_single.sh rgb
+```
+To train the FLIR thermal single modality object detector, do
+```
+bash bash/train_single.sh thermal
+```
+Look inside the bash scripts and `train_single.py` file to better understand and set custom training parameters best suited for your hardware setup. 
 
 ## Advanced
 
@@ -38,8 +50,7 @@ TODO
 
 #### FLIR Aligned
 
-Download the FLIR Aligned Dataset and put it in this structure:
-
+Download the FLIR Aligned Dataset from [this project](https://github.com/docf/multispectral-object-detection) and put it in this structure:
 ```
 ├── FLIR_Aligned
 │   ├── images_rgb_train
