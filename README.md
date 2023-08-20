@@ -223,5 +223,11 @@ python validate_all_att_cls.py <dir of stf dataset> --dataset stf_clear --num-sc
 --model efficientdetv2_dt --batch-size=1 --branch fusion --att_type cbam
 ```
 
+## Time benchmarks
+To benchmark the scene-adaptive fusion model, run
+```
+bash bash/benchmark.sh
+``` 
+The benchmark assumes a batch size of `1` and a input image size of `768x768`. The data and model weights are mocked, so there is no need to copy data around when testing on multiple machines.
 
 
