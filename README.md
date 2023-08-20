@@ -8,17 +8,19 @@ Multimodal deep sensor fusion has the potential to enable autonomous vehicles to
 
 ### Environment
 
-Before starting, we will need Anaconda installed. Then create we can create new environment using:
+Before starting, install [anaconda](https://docs.conda.io/en/latest/miniconda.html#installing) in order to create a virtual environment and create a new Python 3.9 environment using:
 
 ```
 conda create -n dsfusion python=3.9
 ```
+Note: our code has been tested with Python 3.9. It is not garuanteed to work with other other versions. 
 
-To install requirements, we can use the `requirements.txt` file:
+ Activate the environment and install the necessary packages via:
 
 ```
-pip install -r requirements.txt
-```
+ conda activate dsfusion
+ pip install -r requirements.txt
+ ```
 
 ## Toy Example
 A few sample images from the FLIR_Aligned dataset are provided to enable users to quickly test out the training and validation functionalities without committing to downloading the full datasets. 
