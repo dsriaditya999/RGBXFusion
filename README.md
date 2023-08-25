@@ -25,11 +25,12 @@ Note: our code has been tested with Python 3.9. It is not garuanteed to work wit
 ## Toy Example
 A few sample images from the FLIR_Aligned dataset are provided to enable users to quickly test out the training and validation functionalities without committing to downloading the full datasets. 
 
-### Inference
+### Validating an RGB-T Model
 TODO
-### Validation
+### Scene Adaptive Validation
 TODO
-### Training
+### Training an RGB-T Model
+TODO
 
 ## Single modality backbone and detector training
 We use single modality backbones extracted from trained object detectors.
@@ -179,7 +180,7 @@ python validate_fusion_adaptive.py <dir of flir dataset> --dataset flir_aligned_
 To do a scene-adaptive validation on all data of m3fd Dataset, run the following command:
 
 ```
-python validate_all_att_cls.py <dir of m3fd dataset> --dataset m3fd_full --num-scenes 5 \
+python validate_fusion_adaptive.py <dir of m3fd dataset> --dataset m3fd_full --num-scenes 5 \
 --checkpoint <path to model trained on all m3fd data> \
 --checkpoint-cls <path to classifier> \
 --checkpoint-scenes <path to model trained on all m3fd data> \
@@ -195,7 +196,7 @@ python validate_all_att_cls.py <dir of m3fd dataset> --dataset m3fd_full --num-s
 To do a scene-adaptive validation on all data of STF Dataset, run the following command:
 
 ```
-python validate_all_att_cls.py <dir of stf dataset> --dataset stf_full --num-scenes 7 \
+python validate_fusion_adaptive.py <dir of stf dataset> --dataset stf_full --num-scenes 7 \
 --checkpoint <path to model trained on all stf data> \
 --checkpoint-cls <path to classifier> \
 --checkpoint-scenes <path to model trained on all stf data> \
@@ -213,7 +214,7 @@ python validate_all_att_cls.py <dir of stf dataset> --dataset stf_full --num-sce
 To do a scene-adaptive validation on all clear data of STF Dataset, run the following command:
 
 ```
-python validate_all_att_cls.py <dir of stf dataset> --dataset stf_clear --num-scenes 3 \
+python validate_fusion_adaptive.py <dir of stf dataset> --dataset stf_clear --num-scenes 3 \
 --checkpoint <path to model trained on all clear stf data> \
 --checkpoint-cls <path to classifier> \
 --checkpoint-scenes <path to model trained on all clear stf data> \
