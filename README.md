@@ -86,7 +86,7 @@ Download the FLIR Aligned Dataset and put it in this structure:
 
 ### Checkpoints
 
-Various model checkpoints can be downloaded from [here](https://drive.google.com/drive/folders/1DXBIEsu799aDVCkwiGxQ5Y1bBcHUdrqv?usp=sharing).
+Various model checkpoints can be downloaded from [here](https://drive.google.com/drive/folders/14r-n-O2U-MCyAc6nHHuT4WmrJpOaoTfm?usp=sharing).
 
 ## Training RGB Modality Checkpoint
 TODO
