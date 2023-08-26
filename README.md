@@ -25,12 +25,51 @@ Note: our code has been tested with Python 3.9. It is not garuanteed to work wit
 ## Toy Example
 A few sample images from the FLIR_Aligned dataset are provided to enable users to quickly test out the training and validation functionalities without committing to downloading the full datasets. 
 
+### Setup
+Download FLIR checkpoint model files from [here](https://drive.google.com/drive/folders/1Ys1HWzKT7L6fkx_nVhYzaHvOHBewfk_I?usp=sharing) and arrange them according to the following structure in the `toy` folder:
+
+```
+toy
+├── checkpoints
+│   ├── Classifier
+│   │   └── flir_classifier.pth.tar
+│   ├── Fusion Models
+│   │   ├── Day
+│   │   │   └── model_best.pth.tar
+│   │   ├── Night
+│   │   │   └── model_best.pth.tar
+│   │   └── Full
+│   │       └── model_best.pth.tar
+│   └── Single Modality Models
+│       └── flir_thermal_backbone.pth.tar
+└── data
+```
+
+Note: Make sure that you are in the `RGBXFusion` directory when running the following commands.
 ### Validating an RGB-T Model
-TODO
+
+To validate a trained (on day) RGB-Thermal Fusion (CBAM) model on day data of toy FLIR Dataset, run the following command:
+
+```
+python validate_fusion.py toy/data --dataset flir_aligned_day --checkpoint "toy/checkpoints/Fusion Models/Day/model_best.pth.tar" --classwise --split test --num-classes 90 --rgb_mean 0.485 0.456 0.406 --rgb_std 0.229 0.224 0.225 --thermal_mean 0.519 0.519 0.519 --thermal_std 0.225 0.225 0.225 --model efficientdetv2_dt --batch-size=8 --branch fusion --att_type cbam
+```
+
 ### Scene Adaptive Validation
-TODO
+
+To do a scene-adaptive validation on all data of toy FLIR Dataset, run the following command:
+
+```
+python validate_fusion_adaptive.py toy/data --dataset flir_aligned_full --num-scenes 3 --checkpoint "toy/checkpoints/Fusion Models/Full/model_best.pth.tar" --checkpoint-cls "toy/checkpoints/Classifier/flir_classifier.pth.tar" --checkpoint-scenes "toy/checkpoints/Fusion Models/Full/model_best.pth.tar" "toy/checkpoints/Fusion Models/Day/model_best.pth.tar" "toy/checkpoints/Fusion Models/Night/model_best.pth.tar"  --split test --num-classes 90 --rgb_mean 0.485 0.456 0.406 --rgb_std 0.229 0.224 0.225 --thermal_mean 0.519 0.519 0.519 --thermal_std 0.225 0.225 0.225 --classwise --model efficientdetv2_dt --batch-size=1 --branch fusion --att_type cbam
+```
+
 ### Training an RGB-T Model
-TODO
+
+To train a RGB-Thermal Fusion (CBAM) model on night data of toy FLIR Dataset, run the following command:
+
+```
+python train_fusion.py toy/data --dataset flir_aligned_night --thermal-checkpoint-path "toy/checkpoints/Single Modality Models/flir_thermal_backbone.pth.tar" --init-fusion-head-weights thermal --num-classes 90 --rgb_mean 0.485 0.456 0.406 --rgb_std 0.229 0.224 0.225 --thermal_mean 0.519 0.519 0.519 --thermal_std 0.225 0.225 0.225 --model efficientdetv2_dt --batch-size=8 --epochs=50 --branch fusion --freeze-layer fusion_cbam --att_type cbam
+```
+
 
 ## Single modality backbone and detector training
 We use single modality backbones extracted from trained object detectors.
@@ -124,19 +163,19 @@ python validate_fusion.py <dir of STF dataset> --dataset stf_clear --thermal-che
 
 ## Training RGB-X Models
 
-To train a RGB-Thermal Fusion (CBAM) on day data of FLIR Dataset, run the following command:
+To train a RGB-Thermal Fusion (CBAM) model on day data of FLIR Dataset, run the following command:
 
 ```
 python train_fusion.py <dir of flir dataset> --dataset flir_aligned_day --thermal-checkpoint-path <path to thermal checkpoint> --init-fusion-head-weights thermal --num-classes 90 --rgb_mean 0.485 0.456 0.406 --rgb_std 0.229 0.224 0.225 --thermal_mean 0.519 0.519 0.519 --thermal_std 0.225 0.225 0.225 --model efficientdetv2_dt --batch-size=8 --epochs=50 --branch fusion --freeze-layer fusion_cbam --att_type cbam
 ```
 
-To train a RGB-Thermal Fusion (CBAM) on overcast data of m3fd Dataset, run the following command:
+To train a RGB-Thermal Fusion (CBAM) model on overcast data of m3fd Dataset, run the following command:
 
 ```
 python train_fusion.py <dir of m3fd dataset> --dataset m3fd_overcast --rgb-checkpoint-path <path to rgb checkpoint> --thermal-checkpoint-path <path to thermal checkpoint> --init-fusion-head-weights thermal --num-classes 6 --rgb_mean 0.49151019 0.50717567 0.50293698 --rgb_std 0.1623529 0.14178433 0.13799928 --thermal_mean 0.33000296 0.33000296 0.33000296 --thermal_std 0.18958051 0.18958051 0.18958051 --model efficientdetv2_dt --batch-size=8 --epochs=50 --branch fusion --freeze-layer fusion_cbam --att_type cbam
 ```
 
-To train a RGB-Gated Fusion (CBAM) on full data of STF Dataset, run the following command:
+To train a RGB-Gated Fusion (CBAM) model on full data of STF Dataset, run the following command:
 
 ```
 python train_fusion.py <dir of STF dataset> --dataset stf_full --rgb-checkpoint-path <path to rgb checkpoint> --thermal-checkpoint-path <path to thermal checkpoint> --init-fusion-head-weights thermal --num-classes 4 --model efficientdetv2_dt --batch-size=8 --epochs=50 --branch fusion --freeze-layer fusion_cbam --att_type cbam
@@ -144,20 +183,20 @@ python train_fusion.py <dir of STF dataset> --dataset stf_full --rgb-checkpoint-
 
 ## Validating RGB-X Models
 
-To validate a trained (on night) RGB-Thermal Fusion (CBAM) on night data of FLIR Dataset, run the following command:
+To validate a trained (on night) RGB-Thermal Fusion (CBAM) model on night data of FLIR Dataset, run the following command:
 
 ```
 python validate_fusion.py <dir of flir dataset> --dataset flir_aligned_night --checkpoint <path to trained model> --classwise --split test --num-classes 90 --rgb_mean 0.485 0.456 0.406 --rgb_std 0.229 0.224 0.225 --thermal_mean 0.519 0.519 0.519 --thermal_std 0.225 0.225 0.225 --model efficientdetv2_dt --batch-size=8 --branch fusion --att_type cbam
 ```
 
-To validate a trained (on full) RGB-Thermal Fusion (CBAM) on challenge data of m3fd Dataset, run the following command:
+To validate a trained (on full) RGB-Thermal Fusion (CBAM) model on challenge data of m3fd Dataset, run the following command:
 
 ```
 python validate_fusion.py <dir of m3fd dataset> --dataset m3fd_challenge --checkpoint <path to trained model> --classwise --split test --num-classes 6 --rgb_mean 0.49151019 0.50717567 0.50293698 --rgb_std 0.1623529 0.14178433 0.13799928 --thermal_mean 0.33000296 0.33000296 0.33000296 --thermal_std 0.18958051 0.18958051 0.18958051 --model efficientdetv2_dt --batch-size=8 --branch fusion --att_type cbam
 ```
 
 
-To validate a trained (on Fog Day) RGB-Gated Fusion (CBAM) on Snow Night of STF Dataset, run the following command:
+To validate a trained (on Fog Day) RGB-Gated Fusion (CBAM) model on Snow Night of STF Dataset, run the following command:
 
 ```
 python validate_fusion.py <dir of STF dataset> --dataset fog_day --checkpoint <path to trained model> --classwise --split test --num-classes 4 --model efficientdetv2_dt --batch-size=8 --branch fusion --att_type cbam
