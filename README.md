@@ -19,7 +19,7 @@ Note: our code has been tested with Python 3.9. It is not garuanteed to work wit
  ```
 
 ### Checkpoints
-Download model checkpoints from [here](https://drive.google.com/drive/folders/14r-n-O2U-MCyAc6nHHuT4WmrJpOaoTfm?usp=sharing), and directly extract it into the `Checkpoints` folder. The folder should have the following structure:
+Download model checkpoints from [here](https://drive.google.com/drive/folders/1-RHJ2e6LfvPb0UTC-hkHiEts4W2Dz1up?usp=sharing), and directly extract it into the `Checkpoints` folder. The folder should have the following structure:
 ```
 Checkpoints
 ├── FLIR_Aligned
@@ -59,7 +59,7 @@ Checkpoints
 ```
 
 ### Datasets
-Download the FLIR Aligned Dataset from [this project](https://github.com/docf/multispectral-object-detection) and extract it into the `Datasets` folder. The folder should have the following structure:
+Download the FLIR Aligned Dataset from [here](https://drive.google.com/drive/folders/18XmdzKj0sGOFt0r4LmwMo9TsVNpyKEzT?usp=sharing), and extract it into the `Datasets` folder. The folder should have the following structure:
 ```
 Datasets
 ├── FLIR_Aligned
@@ -82,7 +82,7 @@ Datasets
 A few sample images from the FLIR_Aligned dataset are provided to enable users to quickly test out the training and validation functionalities without committing to downloading the full datasets. 
 
 #### Setup
-Download FLIR checkpoint model files from [here](https://drive.google.com/drive/folders/1Ys1HWzKT7L6fkx_nVhYzaHvOHBewfk_I?usp=sharing) and put it into the `Checkpoints` folder. See instructions of checkpoints above.
+Download FLIR checkpoint model files from [here](https://drive.google.com/drive/folders/1-RHJ2e6LfvPb0UTC-hkHiEts4W2Dz1up?usp=sharing) and put it into the `Checkpoints` folder. See instructions of checkpoints above.
 
 Note: Make sure that you are in the `RGBXFusion` directory when running the following commands.
 #### Validating an RGB-T Model
