@@ -19,3 +19,8 @@ single_bb_thermal.txt
 data/parsers/__pycache__/*
 utils/evaluation/__pycache__/*
 utils/__pycache__/*
+Checkpoints/*
+datasets/FLIR_Aligned/images_rgb_test/*
+datasets/FLIR_Aligned/images_rgb_train/*
+datasets/FLIR_Aligned/images_thermal_test/*
+datasets/FLIR_Aligned/images_thermal_train/*
