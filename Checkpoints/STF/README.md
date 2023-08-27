@@ -1,19 +1,31 @@
-## Place holder for FLIR_Aligned Checkpoints
+## Place Holder for STF Checkpoints
 
 ```
 Checkpoints
 ├── FLIR_Aligned
-│   ├── Classifier
-│   │   └── flir_classifier.pth.tar
-│   ├── Fusion_Models
-│   │   ├── Day
-│   │   │   └── model_best.pth.tar
-│   │   ├── Night
-│   │   │   └── model_best.pth.tar
-│   │   └── Full
-│   │       └── model_best.pth.tar
-│   └── Single_Modality_Models
-│       └── flir_thermal_backbone.pth.tar
 ├── M3FD
-└── STF
+└───STF
+    ├── Classifiers
+    │   ├── stf_classifier_all_trained.pth.tar
+    │   └── stf_classifier_clear_trained.pth.tar
+    ├── Fusion_Models
+    │   ├── All_Trained
+    │   │   ├── Clear_Day
+    │   │   ├── Clear_Night
+    │   │   ├── Fog_Day
+    │   │   ├── Fog_Night
+    │   │   ├── Snow_Day
+    │   │   ├── Snow_Night
+    │   │   └── Full
+    │   └── Clear_Trained
+    │       ├── Clear_Day
+    │       ├── Clear_Night
+    │       └── Clear
+    └── Single_Modality_Models
+        ├── All_Trained
+        │   ├── stf_rgb_backbone.pth.tar
+        │   └── stf_gated_backbone.pth.tar
+        └── Clear_Trained
+            ├── stf_rgb_backbone.pth.tar
+            └── stf_gated_backbone.pth.tar 
 ```
