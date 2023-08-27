@@ -19,8 +19,9 @@ single_bb_thermal.txt
 data/parsers/__pycache__/*
 utils/evaluation/__pycache__/*
 utils/__pycache__/*
-Checkpoints/*
 Datasets/FLIR_Aligned/images_rgb_test/*
 Datasets/FLIR_Aligned/images_rgb_train/*
 Datasets/FLIR_Aligned/images_thermal_test/*
 Datasets/FLIR_Aligned/images_thermal_train/*
+*.pth.tar
+*.pth
