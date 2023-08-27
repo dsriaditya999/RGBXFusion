@@ -235,18 +235,7 @@ python validate_fusion_adaptive.py <dir of m3fd dataset> --dataset m3fd_full --n
 To do a scene-adaptive validation on all data of STF Dataset, run the following command:
 
 ```
-python validate_fusion_adaptive.py <dir of stf dataset> --dataset stf_full --num-scenes 7 \
---checkpoint <path to model trained on all stf data> \
---checkpoint-cls <path to classifier> \
---checkpoint-scenes <path to model trained on all stf data> \
-<path to model trained on clear day stf data> \
-<path to model trained on clear night stf data> \
-<path to model trained on fog day stf data> \
-<path to model trained on fog night stf data> \
-<path to model trained on snow day stf data> \
-<path to model trained on snow night stf data> \
---split test --num-classes 4 \
---model efficientdetv2_dt --batch-size=1 --branch fusion --att_type cbam
+bash bash/val_adaptive_stf.sh
 ```
 
 
