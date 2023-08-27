@@ -1,4 +1,4 @@
-python validate_fusion_adaptive.py /media/hdd2/rgb_gated_aligned --dataset stf_full --num-scenes 7 \
+python validate_fusion_adaptive.py Datasets/STF --dataset stf_full --num-scenes 7 \
 --checkpoint Checkpoints/STF/Fusion_Models/All_Trained/Full/model_best.pth.tar \
 --checkpoint-cls Checkpoints/STF/Classifiers/stf_classifier_all_trained.pth.tar \
 --checkpoint-scenes Checkpoints/STF/Fusion_Models/All_Trained/Full/model_best.pth.tar \

@@ -297,9 +297,13 @@ def create_evaluator(name, dataset, distributed=False, pred_yxyx=False, classwis
     # FIXME support OpenImages Challenge2019 metric w/ image level label consideration
     if 'coco' in name:
         return CocoEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
-    elif 'm3fd' in name:
+    elif 'm3fd' in name and classwise:
+        return PascalEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
+    elif 'm3fd' in name and not classwise:
         return CocoEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
-    elif 'flir' in name:
+    elif 'flir' in name and classwise:
+        return PascalEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
+    elif 'flir' in name and not classwise:
         return CocoEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
     elif 'stf' in name and classwise:
         return KittiEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
