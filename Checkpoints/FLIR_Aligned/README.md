@@ -1,4 +1,4 @@
-## Place holder for FLIR_Aligned Checkpoints
+## Place Holder for FLIR_Aligned Checkpoints
 
 ```
 Checkpoints

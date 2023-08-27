@@ -16,7 +16,7 @@ from effdet.distributed import synchronize, is_main_process, all_gather_containe
 #import pyximport; py_importer, pyx_importer = pyximport.install(pyimport=True)
 from .evaluation import detection_evaluator as tfm_eval
 #pyximport.uninstall(py_importer, pyx_importer)
-# from .kitti_eval import kitti_eval
+from .kitti_eval import kitti_eval
 
 _logger = logging.getLogger(__name__)
 
@@ -278,7 +278,7 @@ class KittiEvaluator(Evaluator):
         self.add_ground_truth_anno(target)
         self.add_detections(detections)
 
-    def evaluate(self):
+    def evaluate(self, output_result_file):
         # 1 : 'LargeVehicle',
         # 2 : 'Person',
         # 3 : 'Car',
@@ -293,7 +293,7 @@ class KittiEvaluator(Evaluator):
         print(result)
         print(ret_dict)
 
-def create_evaluator(name, dataset, distributed=False, pred_yxyx=False):
+def create_evaluator(name, dataset, distributed=False, pred_yxyx=False, classwise=False):
     # FIXME support OpenImages Challenge2019 metric w/ image level label consideration
     if 'coco' in name:
         return CocoEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
@@ -301,9 +301,9 @@ def create_evaluator(name, dataset, distributed=False, pred_yxyx=False):
         return CocoEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
     elif 'flir' in name:
         return CocoEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
-    elif 'stf' in name and 'eval' in name:
+    elif 'stf' in name and classwise:
         return KittiEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
-    elif 'stf' in name and 'eval' not in name:
+    elif 'stf' in name and not classwise:
         return PascalEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)
     elif 'openimages' in name:
         return OpenImagesEvaluator(dataset, distributed=distributed, pred_yxyx=pred_yxyx)

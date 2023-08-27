@@ -1,19 +1,17 @@
-## Place holder for FLIR_Aligned Checkpoints
+## Place Holder for M3FD Checkpoints
 
 ```
 Checkpoints
 ├── FLIR_Aligned
+├── M3FD
 │   ├── Classifier
-│   │   └── flir_classifier.pth.tar
+│   │   └── m3fd_classifier.pth.tar
 │   ├── Fusion_Models
 │   │   ├── Day
-│   │   │   └── model_best.pth.tar
 │   │   ├── Night
-│   │   │   └── model_best.pth.tar
+│   │   ├── Overcast
+│   │   ├── Challenge
 │   │   └── Full
-│   │       └── model_best.pth.tar
 │   └── Single_Modality_Models
-│       └── flir_thermal_backbone.pth.tar
-├── M3FD
 └── STF
 ```
