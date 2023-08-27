@@ -167,41 +167,15 @@ python validate_fusion.py <dir of STF dataset> --dataset fog_day --checkpoint <p
 ```
 
 #### Validating Scene-Adaptive Models
-* To do a scene-adaptive validation on all data of FLIR Dataset, run the following command:
 ```
+# FLIR_Aligned dataset
 bash bash/val_adaptive_flir.sh
-```
-
-* To do a scene-adaptive validation on all data of m3fd Dataset, run the following command:
-```
-python validate_fusion_adaptive.py <dir of m3fd dataset> --dataset m3fd_full --num-scenes 5 \
---checkpoint <path to model trained on all m3fd data> \
---checkpoint-cls <path to classifier> \
---checkpoint-scenes <path to model trained on all m3fd data> \
-<path to model trained on day m3fd data> \
-<path to model trained on night m3fd data> \
-<path to model trained on overcast m3fd data> \
-<path to model trained on challenge m3fd data> \
---split test --num-classes 6 --rgb_mean 0.49151019 0.50717567 0.50293698 --rgb_std 0.1623529 0.14178433 0.13799928 \
---thermal_mean 0.33000296 0.33000296 0.33000296 --thermal_std 0.18958051 0.18958051 0.18958051 \
---classwise --model efficientdetv2_dt --batch-size=1 --branch fusion --att_type cbam
-```
-
-* To do a scene-adaptive validation on all data of STF Dataset, run the following command:
-```
+# M3FD dataset
+bash bash/val_adaptive_m3fd.sh
+# STF dataset
 bash bash/val_adaptive_stf.sh
-```
-
-* To do a scene-adaptive validation on all clear data of STF Dataset, run the following command:
-```
-python validate_fusion_adaptive.py <dir of stf dataset> --dataset stf_clear --num-scenes 3 \
---checkpoint <path to model trained on all clear stf data> \
---checkpoint-cls <path to classifier> \
---checkpoint-scenes <path to model trained on all clear stf data> \
-<path to model trained on clear day stf data> \
-<path to model trained on clear night stf data> \
---split test --num-classes 4 \
---model efficientdetv2_dt --batch-size=1 --branch fusion --att_type cbam
+# STF Clear dataset
+bash bash/val_adaptive_stf_clear.sh
 ```
 
 ## Time benchmarks
