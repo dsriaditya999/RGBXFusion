@@ -123,7 +123,7 @@ class StfClearCfg(CocoCfg):
     splits: Dict[str, dict] = field(default_factory=lambda: dict(
         train=dict(ann_filename='meta/all/stf-clear-train.json', img_dir='gated_full_acc_rect_aligned', has_labels=True),
         val=dict(ann_filename='meta/all/stf-clear-val.json', img_dir='gated_full_acc_rect_aligned', has_labels=True),
-        test=dict(ann_filename='meta/all/stf-clear-test.json', img_dir='gated_full_acc_rect_aligned', has_labels=True),
+        test=dict(ann_filename='meta/all/all/test_clear.json', img_dir='gated_full_acc_rect_aligned', has_labels=True),
     ))
 
 
