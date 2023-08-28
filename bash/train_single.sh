@@ -1,7 +1,7 @@
 modality=$1
 
 python train_single.py \
-/home/carson/data/FLIR/FLIR_Aligned \
+Datasets/FLIR_Aligned \
 --dataset=flir_aligned_${modality} \
 --model=efficientdetv2_dt \
 --batch-size=32 \
