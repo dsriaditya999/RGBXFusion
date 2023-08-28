@@ -119,7 +119,6 @@ def validate(args):
         extra_args = {}
         if args.img_size is not None:
             extra_args = dict(image_size=(args.img_size, args.img_size))
-        print(extra_args)
         bench = create_model(
             args.model,
             bench_task='predict_cls',
@@ -154,6 +153,10 @@ def validate(args):
 
     dataset = create_dataset(args.dataset, args.root, args.split)
     input_config = resolve_input_config(args, model_config)
+    if 'stf' in args.dataset:
+        from data.loader_single import create_loader
+    else:
+        from effdet.data import create_loader
     loader = create_loader(
         dataset,
         input_size=input_config['input_size'],

@@ -227,11 +227,34 @@ def create_dataset(name, root, splits=('train', 'val')):
             )
 
 
-# STF Dataset
+    # STF Dataset
     elif name == 'stf_clear_rgb': 
         dataset_cls = XBitDetectionDatset
         datasets = OrderedDict()
         dataset_cfg = StfClearRGBCfg()
+        for s in splits:
+            if s not in dataset_cfg.splits:
+                raise RuntimeError(f'{s} split not found in config')
+            split_cfg = dataset_cfg.splits[s]
+            ann_file = root / split_cfg['ann_filename']
+            parser_cfg = CocoParserCfg(
+                ann_filename=ann_file,
+                has_labels=split_cfg['has_labels']
+            )
+
+            datasets[s] = XBitDetectionDatset(
+                data_dir=root / Path(split_cfg['img_dir']),
+                parser=create_parser(dataset_cfg.parser, cfg=parser_cfg),
+                mode=s, 
+                bits=12,
+                mean = [0.26694615, 0.26693442, 0.26698295], 
+                std = [0.12035122, 0.12039929, 0.12037755],
+            )
+    
+    elif name == 'stf_full_rgb': 
+        dataset_cls = XBitDetectionDatset
+        datasets = OrderedDict()
+        dataset_cfg = StfFullRGBCfg()
         for s in splits:
             if s not in dataset_cfg.splits:
                 raise RuntimeError(f'{s} split not found in config')

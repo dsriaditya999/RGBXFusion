@@ -28,7 +28,7 @@ class ImageToNumpy:
         return np_img, annotations
     
 
-class ImageToNumpy:
+class ImageToNumpyFusion:
 
     def __call__(self, pil_gated_img, pil_rgb_img, annotations: dict):
         np_gated_img = np.array(pil_gated_img, dtype=np.uint8)
@@ -470,7 +470,7 @@ def transforms_coco_eval_fusion(
     image_tfl = [
         ResizePadFusion(
             target_size=img_size, interpolation=interpolation, rgb_fill_color=rgb_fill_color, gated_fill_color=gated_fill_color),
-        ImageToNumpy(),
+        ImageToNumpyFusion(),
     ]
 
     assert use_prefetcher, "Only supporting prefetcher usage right now"
@@ -495,7 +495,7 @@ def transforms_coco_train_fusion(
         RandomFlipFusion(horizontal=True, prob=0.5),
         RandomResizePadFusion(
             target_size=img_size, interpolation=interpolation, rgb_fill_color=rgb_fill_color, gated_fill_color=gated_fill_color),
-        ImageToNumpy(),
+        ImageToNumpyFusion(),
     ]
 
     assert use_prefetcher, "Only supporting prefetcher usage right now"

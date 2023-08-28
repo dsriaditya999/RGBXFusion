@@ -129,6 +129,15 @@ class StfClearRGBCfg(CocoCfg):
         val=dict(ann_filename='meta/all/all/val_clear.json', img_dir='cam_stereo_left_rect_aligned', has_labels=True),
         test=dict(ann_filename='meta/all/all/test_clear.json', img_dir='cam_stereo_left_rect_aligned', has_labels=True),
     ))
+
+@dataclass
+class StfFullRGBCfg(CocoCfg):
+    variant: str = ''
+    splits: Dict[str, dict] = field(default_factory=lambda: dict(
+        train=dict(ann_filename='meta/all/all/stf-full-train.json', img_dir='cam_stereo_left_rect_aligned', has_labels=True),
+        val=dict(ann_filename='meta/all/all/stf-full-val.json', img_dir='cam_stereo_left_rect_aligned', has_labels=True),
+        test=dict(ann_filename='meta/all/all/stf-full-test.json', img_dir='cam_stereo_left_rect_aligned', has_labels=True),
+    ))
     
 @dataclass
 class StfClearCfg(CocoCfg):

@@ -200,7 +200,6 @@ class EfficientDetwithCls(EfficientDet):
 
     def __init__(self, config, pretrained_backbone=True, alternate_init=False):
         EfficientDet.__init__(self, config, pretrained_backbone, alternate_init)
-        print(config.num_scenes)
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
         self.classifier = Classifier(n_classes=config.num_scenes, dropout=0.5)
 
