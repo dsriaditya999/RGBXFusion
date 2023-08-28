@@ -56,18 +56,22 @@ class FlirAlignedThermalCfg(CocoCfg):
 class FlirAlignedRGBCfg(CocoCfg):
     variant: str = ''
     splits: Dict[str, dict] = field(default_factory=lambda: dict(
-        train=dict(
-            ann_filename=os.path.join('images_rgb_train', 'flir.json'), 
-            img_dir=os.path.join('images_rgb_train', 'data'), has_labels=True),
-        val=dict(
-            ann_filename=os.path.join('images_rgb_val', 'flir.json'), 
-            img_dir=os.path.join('images_rgb_val', 'data'), has_labels=True),
-        test=dict(
-            ann_filename=os.path.join('images_rgb_val', 'flir.json'), 
-            img_dir=os.path.join('images_rgb_val', 'data'), has_labels=True)
+        train=dict(ann_filename='meta/rgb/rgb-train-flir.json', img_dir='images_rgb_train/data/', has_labels=True),
+        val=dict(ann_filename='meta/rgb/rgb-test-flir.json', img_dir='images_rgb_test/data/', has_labels=True),
+        test=dict(ann_filename='meta/rgb/rgb-test-flir.json', img_dir='images_rgb_test/data/', has_labels=True),
     ))
 
+
 # M3FD Dataset
+@dataclass
+class M3fdRGBCfg(CocoCfg):
+    variant: str = ''
+    splits: Dict[str, dict] = field(default_factory=lambda: dict(
+        train=dict(ann_filename='meta/m3fd-train.json', img_dir='Vis', has_labels=True),
+        val=dict(ann_filename='meta/m3fd-val.json', img_dir='Vis', has_labels=True),
+        test=dict(ann_filename='meta/m3fd-test.json', img_dir='Vis', has_labels=True)
+    ))
+
 @dataclass
 class M3fdDayCfg(CocoCfg):
     variant: str = ''
@@ -117,6 +121,15 @@ class M3fdFullCfg(CocoCfg):
 
 
 # Seeing Through Fog Dataset
+@dataclass
+class StfClearRGBCfg(CocoCfg):
+    variant: str = ''
+    splits: Dict[str, dict] = field(default_factory=lambda: dict(
+        train=dict(ann_filename='meta/all/all/train_clear.json', img_dir='cam_stereo_left_rect_aligned', has_labels=True),
+        val=dict(ann_filename='meta/all/all/val_clear.json', img_dir='cam_stereo_left_rect_aligned', has_labels=True),
+        test=dict(ann_filename='meta/all/all/test_clear.json', img_dir='cam_stereo_left_rect_aligned', has_labels=True),
+    ))
+    
 @dataclass
 class StfClearCfg(CocoCfg):
     variant: str = ''

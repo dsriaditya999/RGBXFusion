@@ -189,3 +189,30 @@ class DetBenchPredictImagePair(DetBenchPredict):
             thermal_img.shape[0], class_out, box_out, self.anchors.boxes, indices, classes,
             img_scale, img_size, max_det_per_image=self.max_det_per_image, soft_nms=self.soft_nms
         )
+
+class ClsBenchPredict(nn.Module):
+    def __init__(self, model):
+        super(ClsBenchPredict, self).__init__()
+        self.model = model
+        self.config = model.config  # FIXME remove this when we can use @property (torchscript limitation)
+
+    def forward(self, x, img_info: Optional[Dict[str, torch.Tensor]] = None):
+        _, _, image_class_out = self.model(x)
+        output = torch.softmax(image_class_out, dim=1)
+        return output
+    
+class ClsBenchTrain(nn.Module):
+    def __init__(self, model):
+        super(ClsBenchTrain, self).__init__()
+        self.model = model
+        self.config = model.config  # FIXME remove this when we can use @property (torchscript limitation)
+        self.loss_fn = nn.CrossEntropyLoss()
+
+    def forward(self, x, target: Dict[str, torch.Tensor]):
+        _, _, image_class_out = self.model(x)
+        loss = self.loss_fn(image_class_out, target['img_scene'])
+        output = {'loss': loss}
+        if not self.training:
+            # if eval mode, output detections for evaluation
+            output['classifications'] = image_class_out        
+        return output
