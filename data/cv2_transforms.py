@@ -28,7 +28,7 @@ class ImageToNumpy:
         return np_img, annotations
     
 
-class ImageToNumpy:
+class ImageToNumpyFusion:
 
     def __call__(self, pil_gated_img, pil_rgb_img, annotations: dict):
         np_gated_img = np.array(pil_gated_img, dtype=np.uint8)
@@ -73,8 +73,160 @@ def _size_tuple(size):
         assert len(size) == 2
         return size
 
-
 class ResizePad:
+
+    def __init__(self, target_size: int, interpolation: str = 'bilinear', fill_color: tuple = (0, 0, 0)):
+        self.target_size = _size_tuple(target_size)
+        self.interpolation = interpolation
+        self.fill_color = fill_color
+
+    def __call__(self, img, anno: dict):
+        height, width = img.shape[:2]
+
+        img_scale_y = self.target_size[0] / height
+        img_scale_x = self.target_size[1] / width
+        img_scale = min(img_scale_y, img_scale_x)
+        scaled_h = int(height * img_scale)
+        scaled_w = int(width * img_scale)
+
+        new_img = np.zeros((self.target_size[1], self.target_size[0], 3))
+        interp_method = cv2_interpolation(self.interpolation)
+        img = cv2.resize(img, (scaled_w, scaled_h), interpolation=interp_method)
+        new_img[:scaled_h,:scaled_w] = img
+
+        if 'bbox' in anno:
+            bbox = anno['bbox']
+            bbox[:, :4] *= img_scale
+            bbox_bound = (min(scaled_h, self.target_size[0]), min(scaled_w, self.target_size[1]))
+            clip_boxes_(bbox, bbox_bound)  # crop to bounds of target image or letter-box, whichever is smaller
+            valid_indices = (bbox[:, :2] < bbox[:, 2:4]).all(axis=1)
+            anno['bbox'] = bbox[valid_indices, :]
+            anno['cls'] = anno['cls'][valid_indices]
+
+        anno['img_scale'] = 1. / img_scale  # back to original
+
+        return new_img, anno
+
+
+class RandomResizePad:
+
+    def __init__(self, target_size: int, scale: tuple = (0.5, 2.0), interpolation: str = 'random',
+                 fill_color: tuple = (0, 0, 0)):
+        self.target_size = _size_tuple(target_size)
+        self.scale = scale
+        if interpolation == 'random':
+            self.interpolation = _RANDOM_INTERPOLATION
+        else:
+            self.interpolation = cv2_interpolation(interpolation)
+        self.fill_color = fill_color
+
+    def _get_params(self, img):
+        # Select a random scale factor.
+        scale_factor = random.uniform(*self.scale)
+        scaled_target_height = scale_factor * self.target_size[0]
+        scaled_target_width = scale_factor * self.target_size[1]
+
+        # Recompute the accurate scale_factor using rounded scaled image size.
+        height, width = img.shape[:2]
+        img_scale_y = scaled_target_height / height
+        img_scale_x = scaled_target_width / width
+        img_scale = min(img_scale_y, img_scale_x)
+
+        # Select non-zero random offset (x, y) if scaled image is larger than target size
+        scaled_h = int(height * img_scale)
+        scaled_w = int(width * img_scale)
+        offset_y = scaled_h - self.target_size[0]
+        offset_x = scaled_w - self.target_size[1]
+        offset_y = int(max(0.0, float(offset_y)) * random.uniform(0, 1))
+        offset_x = int(max(0.0, float(offset_x)) * random.uniform(0, 1))
+        return scaled_h, scaled_w, offset_y, offset_x, img_scale
+
+    def __call__(self, img, anno: dict):
+        scaled_h, scaled_w, offset_y, offset_x, img_scale = self._get_params(img)
+        if isinstance(self.interpolation, (tuple, list)):
+            interpolation = random.choice(self.interpolation)
+        else:
+            interpolation = self.interpolation
+        img = cv2.resize(img, (scaled_w, scaled_h), interpolation=interpolation)
+        right, lower = min(scaled_w, offset_x + self.target_size[1]), min(scaled_h, offset_y + self.target_size[0])
+        img = img[offset_y:lower, offset_x:right]
+        new_img = np.zeros((self.target_size[1], self.target_size[0], 3))
+        h, w, c = img.shape
+        new_img[:h,:w] = img
+
+        if 'bbox' in anno:
+            bbox = anno['bbox']  # for convenience, modifies in-place
+            bbox[:, :4] *= img_scale
+            box_offset = np.stack([offset_y, offset_x] * 2)
+            bbox -= box_offset
+            bbox_bound = (min(scaled_h, self.target_size[0]), min(scaled_w, self.target_size[1]))
+            clip_boxes_(bbox, bbox_bound)  # crop to bounds of target image or letter-box, whichever is smaller
+            valid_indices = (bbox[:, :2] < bbox[:, 2:4]).all(axis=1)
+            anno['bbox'] = bbox[valid_indices, :]
+            anno['cls'] = anno['cls'][valid_indices]
+
+        anno['img_scale'] = 1. / img_scale  # back to original
+
+        return new_img, anno
+
+
+class RandomFlip:
+
+    def __init__(self, horizontal=True, vertical=False, prob=0.5):
+        self.horizontal = horizontal
+        self.vertical = vertical
+        self.prob = prob
+
+    def _get_params(self):
+        do_horizontal = random.random() < self.prob if self.horizontal else False
+        do_vertical = random.random() < self.prob if self.vertical else False
+        return do_horizontal, do_vertical
+
+    def __call__(self, img, annotations: dict):
+        do_horizontal, do_vertical = self._get_params()
+        height, width = img.shape[:2]
+
+        def _fliph(bbox):
+            x_max = width - bbox[:, 1]
+            x_min = width - bbox[:, 3]
+            bbox[:, 1] = x_min
+            bbox[:, 3] = x_max
+
+        def _flipv(bbox):
+            y_max = height - bbox[:, 0]
+            y_min = height - bbox[:, 2]
+            bbox[:, 0] = y_min
+            bbox[:, 2] = y_max
+
+        if do_horizontal and do_vertical:
+            img = cv2.rotate(img, cv2.ROTATE_180)
+            if 'bbox' in annotations:
+                _fliph(annotations['bbox'])
+                _flipv(annotations['bbox'])
+        elif do_horizontal:
+            img = cv2.flip(img, 1)
+            if 'bbox' in annotations:
+                _fliph(annotations['bbox'])
+        elif do_vertical:
+            img = cv2.flip(img, 0)
+            if 'bbox' in annotations:
+                _flipv(annotations['bbox'])
+
+        return img, annotations
+    
+class Compose:
+
+    def __init__(self, transforms: list):
+        self.transforms = transforms
+
+    def __call__(self, img, annotations: dict):
+        for t in self.transforms:
+            #print(img)
+            #print(annotations)
+            img, annotations = t(img, annotations)
+        return img, annotations
+    
+class ResizePadFusion:
 
     def __init__(self, target_size: int, interpolation: str = 'bilinear', rgb_fill_color: tuple = (0, 0, 0), gated_fill_color: tuple = (0, 0, 0)):
         self.target_size = _size_tuple(target_size)
@@ -116,7 +268,7 @@ class ResizePad:
         return new_gated_img, new_rgb_img, anno
 
 
-class RandomResizePad:
+class RandomResizePadFusion:
 
     def __init__(self, target_size: int, scale: tuple = (0.5, 2.0), interpolation: str = 'random',
                  rgb_fill_color: tuple = (0, 0, 0), gated_fill_color: tuple = (0, 0, 0)):
@@ -187,7 +339,7 @@ class RandomResizePad:
         return new_gated_img, new_rgb_img, anno
 
 
-class RandomFlip:
+class RandomFlipFusion:
 
     def __init__(self, horizontal=True, vertical=False, prob=0.5):
         self.horizontal = horizontal
@@ -250,7 +402,7 @@ def resolve_fill_color(fill_color, img_mean=IMAGENET_DEFAULT_MEAN):
 
     
 
-class Compose:
+class ComposeFusion:
 
     def __init__(self, transforms: list):
         self.transforms = transforms
@@ -260,8 +412,50 @@ class Compose:
             gated_img, rgb_img, annotations = t(gated_img, rgb_img, annotations)
         return gated_img, rgb_img, annotations
 
-
 def transforms_coco_eval(
+        img_size=224,
+        interpolation='bilinear',
+        use_prefetcher=False,
+        fill_color='mean',
+        mean=IMAGENET_DEFAULT_MEAN,
+        std=IMAGENET_DEFAULT_STD):
+
+    fill_color = resolve_fill_color(fill_color, mean)
+
+    image_tfl = [
+        ResizePad(
+            target_size=img_size, interpolation=interpolation, fill_color=fill_color),
+        ImageToNumpy(),
+    ]
+
+    assert use_prefetcher, "Only supporting prefetcher usage right now"
+    image_tf = Compose(image_tfl)
+    return image_tf
+
+
+def transforms_coco_train(
+        img_size=224,
+        interpolation='random',
+        use_prefetcher=False,
+        fill_color='mean',
+        mean=IMAGENET_DEFAULT_MEAN,
+        std=IMAGENET_DEFAULT_STD):
+
+    fill_color = resolve_fill_color(fill_color, mean)
+
+    image_tfl = [
+        RandomFlip(horizontal=True, prob=0.5),
+        RandomResizePad(
+            target_size=img_size, interpolation=interpolation, fill_color=fill_color),
+        ImageToNumpy(),
+    ]
+
+    assert use_prefetcher, "Only supporting prefetcher usage right now"
+
+    image_tf = Compose(image_tfl)
+    return image_tf
+
+def transforms_coco_eval_fusion(
         img_size=224,
         interpolation='bilinear',
         use_prefetcher=False,
@@ -274,18 +468,18 @@ def transforms_coco_eval(
     rgb_fill_color, gated_fill_color = resolve_fill_color(fill_color, rgb_mean), resolve_fill_color(fill_color, gated_mean)
 
     image_tfl = [
-        ResizePad(
+        ResizePadFusion(
             target_size=img_size, interpolation=interpolation, rgb_fill_color=rgb_fill_color, gated_fill_color=gated_fill_color),
-        ImageToNumpy(),
+        ImageToNumpyFusion(),
     ]
 
     assert use_prefetcher, "Only supporting prefetcher usage right now"
 
-    image_tf = Compose(image_tfl)
+    image_tf = ComposeFusion(image_tfl)
     return image_tf
 
 
-def transforms_coco_train(
+def transforms_coco_train_fusion(
         img_size=224,
         interpolation='random',
         use_prefetcher=False,
@@ -298,13 +492,13 @@ def transforms_coco_train(
     rgb_fill_color, gated_fill_color = resolve_fill_color(fill_color, rgb_mean), resolve_fill_color(fill_color, gated_mean)
 
     image_tfl = [
-        RandomFlip(horizontal=True, prob=0.5),
-        RandomResizePad(
+        RandomFlipFusion(horizontal=True, prob=0.5),
+        RandomResizePadFusion(
             target_size=img_size, interpolation=interpolation, rgb_fill_color=rgb_fill_color, gated_fill_color=gated_fill_color),
-        ImageToNumpy(),
+        ImageToNumpyFusion(),
     ]
 
     assert use_prefetcher, "Only supporting prefetcher usage right now"
 
-    image_tf = Compose(image_tfl)
+    image_tf = ComposeFusion(image_tfl)
     return image_tf

@@ -8,7 +8,8 @@ from effdet.data.parsers import create_parser
 from .parsers import create_parser as create_parser_stf
 
 from .dataset_config import *
-from .dataset import FusionDatasetFLIR, FusionDatasetM3FD, XBitFusionDatsetSTF, DetectionDataset
+from .dataset import FusionDatasetFLIR, FusionDatasetM3FD, DetectionDataset
+from .dataset import XBitFusionDatsetSTF, XBitDetectionDatset
 
 def create_dataset(name, root, splits=('train', 'val')):
     if isinstance(splits, str):
@@ -112,6 +113,24 @@ def create_dataset(name, root, splits=('train', 'val')):
             )
 
     # M3FD Dataset
+    elif name == 'm3fd_rgb':
+        dataset_cls = DetectionDataset
+        datasets = OrderedDict()
+        dataset_cfg = M3fdRGBCfg()
+        for s in splits:
+            if s not in dataset_cfg.splits:
+                raise RuntimeError(f'{s} split not found in config')
+            split_cfg = dataset_cfg.splits[s]
+            ann_file = root / split_cfg['ann_filename']
+            parser_cfg = CocoParserCfg(
+                ann_filename=ann_file,
+                has_labels=split_cfg['has_labels']
+            )
+            datasets[s] = dataset_cls(
+                data_dir=root / Path(split_cfg['img_dir']),
+                parser=create_parser(dataset_cfg.parser, cfg=parser_cfg),
+            )
+
     elif name == 'm3fd_day':
         dataset_cls = FusionDatasetM3FD
         datasets = OrderedDict()
@@ -208,7 +227,52 @@ def create_dataset(name, root, splits=('train', 'val')):
             )
 
 
-# STF Dataset
+    # STF Dataset
+    elif name == 'stf_clear_rgb': 
+        dataset_cls = XBitDetectionDatset
+        datasets = OrderedDict()
+        dataset_cfg = StfClearRGBCfg()
+        for s in splits:
+            if s not in dataset_cfg.splits:
+                raise RuntimeError(f'{s} split not found in config')
+            split_cfg = dataset_cfg.splits[s]
+            ann_file = root / split_cfg['ann_filename']
+            parser_cfg = CocoParserCfg(
+                ann_filename=ann_file,
+                has_labels=split_cfg['has_labels']
+            )
+
+            datasets[s] = XBitDetectionDatset(
+                data_dir=root / Path(split_cfg['img_dir']),
+                parser=create_parser(dataset_cfg.parser, cfg=parser_cfg),
+                mode=s, 
+                bits=12,
+                mean = [0.26694615, 0.26693442, 0.26698295], 
+                std = [0.12035122, 0.12039929, 0.12037755],
+            )
+    
+    elif name == 'stf_full_rgb': 
+        dataset_cls = XBitDetectionDatset
+        datasets = OrderedDict()
+        dataset_cfg = StfFullRGBCfg()
+        for s in splits:
+            if s not in dataset_cfg.splits:
+                raise RuntimeError(f'{s} split not found in config')
+            split_cfg = dataset_cfg.splits[s]
+            ann_file = root / split_cfg['ann_filename']
+            parser_cfg = CocoParserCfg(
+                ann_filename=ann_file,
+                has_labels=split_cfg['has_labels']
+            )
+
+            datasets[s] = XBitDetectionDatset(
+                data_dir=root / Path(split_cfg['img_dir']),
+                parser=create_parser(dataset_cfg.parser, cfg=parser_cfg),
+                mode=s, 
+                bits=12,
+                mean = [0.26694615, 0.26693442, 0.26698295], 
+                std = [0.12035122, 0.12039929, 0.12037755],
+            )
 
     elif name == 'stf_full': 
         dataset_cls = XBitFusionDatsetSTF
