@@ -282,7 +282,7 @@ def main():
             extra_args = dict(image_size=(args.image_size, args.image_size))
         model = create_model(
             args.model,
-            bench_task=args.bench_task,
+            bench_task='train_cls',
             num_classes=args.num_classes,
             pretrained=args.pretrained,
             pretrained_backbone=args.pretrained_backbone,
@@ -426,14 +426,7 @@ def main():
                     logging.info("Distributing BatchNorm running means and vars")
                 distribute_bn(model, args.world_size, args.dist_bn == 'reduce')
 
-            # the overhead of evaluating with coco style datasets is fairly high, so just ema or non, not both
-            if model_ema is not None:
-                if args.distributed and args.dist_bn in ('broadcast', 'reduce'):
-                    distribute_bn(model_ema, args.world_size, args.dist_bn == 'reduce')
-
-                eval_metrics = validate(model_ema.module, loader_eval, args, evaluator, log_suffix=' (EMA)')
-            else:
-                eval_metrics = validate(model, loader_eval, args, evaluator)
+            eval_metrics = validate(model, loader_eval, args)
 
             if lr_scheduler is not None:
                 # step LR for next epoch
@@ -623,9 +616,10 @@ def train_epoch(
     return OrderedDict([('loss', losses_m.avg)])
 
 
-def validate(model, loader, args, evaluator=None, log_suffix=''):
+def validate(model, loader, args, log_suffix=''):
     batch_time_m = AverageMeter()
     losses_m = AverageMeter()
+    acc_m = AverageMeter()
 
     model.eval()
 
@@ -637,9 +631,7 @@ def validate(model, loader, args, evaluator=None, log_suffix=''):
 
             output = model(input, target)
             loss = output['loss']
-
-            if evaluator is not None:
-                evaluator.add_predictions(output['detections'], target)
+            acc = accuracy(output['classifications'], target['img_scene'])
 
             if args.distributed:
                 reduced_loss = reduce_tensor(loss.data, args.world_size)
@@ -649,6 +641,7 @@ def validate(model, loader, args, evaluator=None, log_suffix=''):
             torch.cuda.synchronize()
 
             losses_m.update(reduced_loss.item(), input.size(0))
+            acc_m.update(acc[0].item(), input.size(0))
 
             batch_time_m.update(time.time() - end)
             end = time.time()
@@ -657,12 +650,11 @@ def validate(model, loader, args, evaluator=None, log_suffix=''):
                 logging.info(
                     '{0}: [{1:>4d}/{2}]  '
                     'Time: {batch_time.val:.3f} ({batch_time.avg:.3f})  '
-                    'Loss: {loss.val:>7.4f} ({loss.avg:>6.4f})  '.format(
-                        log_name, batch_idx, last_idx, batch_time=batch_time_m, loss=losses_m))
+                    'Loss: {loss.val:>7.4f} ({loss.avg:>6.4f})  '
+                    'Acc: {acc.val:>7.4f} ({acc.avg:>6.4f})  '.format(
+                        log_name, batch_idx, last_idx, batch_time=batch_time_m, loss=losses_m, acc=acc_m))
 
-    metrics = OrderedDict([('loss', losses_m.avg)])
-    if evaluator is not None:
-        metrics['map'] = evaluator.evaluate()
+    metrics = OrderedDict([('loss', losses_m.avg), ('acc', acc_m.avg)])
 
     return metrics
 
