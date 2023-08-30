@@ -195,7 +195,7 @@ def validate(args):
         pin_mem=args.pin_mem)
 
     
-    evaluator = create_evaluator(args.dataset, dataset, distributed=False, pred_yxyx=False)
+    evaluator = create_evaluator(args.dataset, dataset, distributed=False, pred_yxyx=False, classwise=args.classwise)
 
 
     bench.eval()

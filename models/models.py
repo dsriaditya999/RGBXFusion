@@ -31,9 +31,11 @@ class Att_FusionNet(nn.Module):
             effdet.helpers.load_checkpoint(rgb_det, args.rgb_checkpoint_path)
             print('Loading RGB from {}'.format(args.rgb_checkpoint_path))
         else:
-            effdet.helpers.load_pretrained(rgb_det, self.config.url)
+            if 'flir' in args.dataset:
+                effdet.helpers.load_pretrained(rgb_det, self.config.url)
+                print('Loading RGB from {}'.format(self.config.url))
             print('RGB checkpoint path not provided.')
-            print('Loading RGB from {}'.format(self.config.url))
+            
 
             
         
@@ -191,3 +193,32 @@ class Adaptive_Att_FusionNet(Att_FusionNet):
         x_box = box_net(out)
 
         return x_class, x_box
+
+
+##################################### Scene Classifier ###############################################
+class EfficientDetwithCls(EfficientDet):
+
+    def __init__(self, config, pretrained_backbone=True, alternate_init=False):
+        EfficientDet.__init__(self, config, pretrained_backbone, alternate_init)
+        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+        self.classifier = Classifier(n_classes=config.num_scenes, dropout=0.5)
+
+        for param in self.backbone.parameters():
+            param.requires_grad = False
+        for param in self.fpn.parameters():
+            param.requires_grad = False
+        for param in self.class_net.parameters():
+            param.requires_grad = False
+        for param in self.box_net.parameters():
+            param.requires_grad = False
+
+    def forward(self, x):
+        x = self.backbone(x)
+        feat = self.avgpool(x[len(x)-1])
+        feat = feat.view(feat.size(0), -1)
+        image_class_out = self.classifier(feat)
+
+        x = self.fpn(x)
+        x_class = self.class_net(x)
+        x_box = self.box_net(x)
+        return x_class, x_box, image_class_out
