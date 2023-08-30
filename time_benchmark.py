@@ -63,7 +63,8 @@ def run(args):
     # - Use batch size of 1 to mimic robotic inference
     # - Warm up the network for 10 iterations in order to discard
     #   the first few iterations which are slower due to GPU initialization.
-    device = torch.device('cuda:{}'.format(args.device))
+    # device = torch.device('cuda:{}'.format(args.device))
+    device = torch.device('cuda:0')
     if args.scene_mode == 'adaptive':
         model = Adaptive_Att_FusionNet(args)
     elif args.scene_mode == 'agnostic':

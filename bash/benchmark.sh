@@ -5,4 +5,4 @@ python time_benchmark.py \
 --branch fusion \
 --att_type cbam \
 --scene-mode adaptive \
---device 1
+--device 0

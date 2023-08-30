@@ -225,10 +225,16 @@ python validate_fusion_adaptive.py <dir of stf dataset> --dataset stf_clear --nu
 ```
 
 ## Time benchmarks
-To benchmark the scene-adaptive fusion model, run
+To benchmark the scene-adaptive fusion model, create a new conda environment:
+```
+conda create -n dsfusion_benchmark python=3.9
+conda activate dsfusion_benchmark
+pip install -r benchmark_requirements.txt --no-deps
+```
+Then run:
 ```
 bash bash/benchmark.sh
 ``` 
-The benchmark assumes a batch size of `1` and a input image size of `768x768`. The data and model weights are mocked, so there is no need to copy data around when testing on multiple machines.
+The benchmark assumes a batch size of `1` and a input image size of `768x768`. The data and model weights are mocked, so there is no need to copy data around when testing on multiple machines. The code will take around a minute to compile before conducting the inference benchmark. 
 
 
