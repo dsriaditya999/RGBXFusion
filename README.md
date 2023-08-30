@@ -135,11 +135,6 @@ python train_fusion.py Datasets/STF --dataset stf_full --rgb-checkpoint-path Che
 
 ## Validation
 #### Validate Single Modality Checkpoins
-* To validate the provided Pretrained RGB checkpoint on FLIR Day Data (Test), run the following command:
-```
-python validate_fusion.py Datasets/FLIR_Aligned --dataset flir_aligned_day --init-fusion-head-weights rgb --classwise --split test --num-classes 90 --rgb_mean 0.485 0.456 0.406 --rgb_std 0.229 0.224 0.225 --thermal_mean 0.519 0.519 0.519 --thermal_std 0.225 0.225 0.225 --model efficientdetv2_dt --batch-size=8 --branch rgb
-```
-
 * To validate the provided Pretrained Thermal checkpoint on m3fd Night Data (Test), run the following command:  
 ```
 python validate_fusion.py Datasets/M3FD --dataset m3fd_night --thermal-checkpoint-path Checkpoints/M3FD/Single_Modality_Models/m3fd_thermal_backbone.pth.tar --init-fusion-head-weights thermal --classwise --split test --num-classes 6 --rgb_mean 0.49151019 0.50717567 0.50293698 --rgb_std 0.1623529 0.14178433 0.13799928 --thermal_mean 0.33000296 0.33000296 0.33000296 --thermal_std 0.18958051 0.18958051 0.18958051 --model efficientdetv2_dt --batch-size=8 --branch thermal
