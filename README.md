@@ -163,7 +163,7 @@ python validate_fusion.py Datasets/M3FD --dataset m3fd_challenge --checkpoint Ch
 
 * To validate a trained (on Fog Day) RGB-Gated Fusion (CBAM) model on Snow Night of STF Dataset, run the following command:
 ```
-python validate_fusion.py Datasets/STF --dataset fog_day --checkpoint Checkpoints/STF/Fusion_Models/All_Trained/Fog_Day/model_best.pth.tar --classwise --split test --num-classes 4 --model efficientdetv2_dt --batch-size=8 --branch fusion --att_type cbam
+python validate_fusion.py Datasets/STF --dataset stf_fog_day --checkpoint Checkpoints/STF/Fusion_Models/All_Trained/Fog_Day/model_best.pth.tar --classwise --split test --num-classes 4 --model efficientdetv2_dt --batch-size=8 --branch fusion --att_type cbam
 ```
 
 #### Validating Scene-Adaptive Models
