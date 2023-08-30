@@ -3,4 +3,6 @@ python time_benchmark.py \
 --num-classes 90 \
 --model efficientdetv2_dt \
 --branch fusion \
---att_type cbam
+--att_type cbam \
+--scene-mode adaptive \
+--device 1
